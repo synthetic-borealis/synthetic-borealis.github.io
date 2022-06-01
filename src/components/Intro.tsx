@@ -13,7 +13,7 @@ const Intro: Component = () => {
       <div class="Intro__container">
         <h1 class="Intro__title">Hi, I’m Elhanan.</h1>
         <p class="Intro__subtitle">I’m a full-stack developer. Programming is my passion.</p>
-        <img class="Intro__avatar" src={avatarImg} alt="" />
+        <img class="Intro__avatar" src={avatarImg} alt="Owner avatar" />
         <ul class="Intro__social-links">
           <li class="Intro__social-link">
             <a href="https://github.com/synthetic-borealis" target="_blank" rel="noreferrer">
