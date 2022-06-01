@@ -9,6 +9,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    @media (max-width: 920px) {
+      width: calc(574 / 824 * 100%);
+      max-width: 574px;
+    }
+    // outline: 2px dashed red;
   }
 
   &__title {
@@ -18,12 +23,19 @@
     font-weight: 900;
     color: vars.$textcolour;
     margin: 0 0 32px 0;
+    @media (max-width: 920px) {
+      text-align: center;
+      margin: 0 auto 32px;
+    }
   }
 
   &__paragraphs-container {
     display: flex;
     flex-direction: column;
     width: 60%;
+    @media (max-width: 920px) {
+      width: 100%;
+    }
     list-style: none;
     padding: 0;
     margin: 0;
@@ -36,6 +48,11 @@
     font-weight: 400;
     color: vars.$textcolour;
     margin: 0;
+    @media (max-width: 920px) {
+      font-size: 1.125rem;
+      line-height: 1.5;
+      text-align: center;
+    }
     &-item {
       margin: 0 0 16px 0;
       &:last-of-type {
