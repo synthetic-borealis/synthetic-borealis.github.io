@@ -51,6 +51,7 @@
     }
     @media (max-width: 670px) {
       font-size: 2.5rem;
+      margin-bottom: 8px;
     }
   }
 
@@ -66,7 +67,7 @@
     }
     @media (max-width: 670px) {
       font-size: 1.5rem;
-      margin-bottom: 74px;
+      margin-bottom: 16px;
     }
   }
 
@@ -79,13 +80,14 @@
     border-radius: 100%;
     margin: 0 auto 26px;
     @media (max-width: 920px) {
-      width: 448px;
-      height: 448px;
+      width: 320px;
+      height: 320px;
       margin-bottom: 64px;
     }
     @media (max-width: 670px) {
-      width: 270px;
-      height: 270px;
+      width: 240px;
+      height: 240px;
+      margin-bottom: 16px;
     }
   }
 
