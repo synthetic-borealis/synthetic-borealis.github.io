@@ -13,7 +13,11 @@
       width: calc(574 / 824 * 100%);
       max-width: 574px;
     }
-    // outline: 2px dashed red;
+    @media (max-width: 670px) {
+      margin: 80px auto;
+      width: calc(364 / 412 * 100%);
+      max-width: 364px;
+    }
   }
 
   &__title {
@@ -26,6 +30,9 @@
     @media (max-width: 920px) {
       text-align: center;
       margin: 0 auto 32px;
+    }
+    @media (max-width: 670px) {
+      margin-bottom: 16px;
     }
   }
 
@@ -53,6 +60,12 @@
       line-height: 1.5;
       text-align: center;
     }
+    @media (max-width: 670px) {
+      font-size: 1rem;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    }
+
     &-item {
       margin: 0 0 16px 0;
       &:last-of-type {
