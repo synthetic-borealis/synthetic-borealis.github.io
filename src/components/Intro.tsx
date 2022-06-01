@@ -32,9 +32,9 @@ const Intro: Component = () => {
           </li>
         </ul>
       </div>
-      <a class="Intro__down-link" href="#">
+      {/* <a class="Intro__down-link" href="#">
         <img class="Intro__down-icon" src={downIcon} alt="Down pointing arrow" />
-      </a>
+      </a> */}
     </header>
   );
 };
