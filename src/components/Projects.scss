@@ -4,12 +4,15 @@
   &__wrapper {
     width: calc(1120 / 1280 * 100%);
     max-width: 1120px;
+    margin: 96px auto;
     @media (max-width: 1024px) {
       width: calc(738 / 834 * 100%);
       max-width: 738px;
     }
-    margin: 96px auto;
-    outline: 2px dashed red;
+    @media (max-width: 670px) {
+      width: 320px;
+      margin: 64px auto;
+    }
   }
 
   &__title {
@@ -17,7 +20,7 @@
     line-height: 1.25;
     font-weight: 900;
     letter-spacing: 0.025em;
-    margin: 0 0 32px 0;
+    margin: 0 0 32px;
     @media (max-width: 1024px) {
       text-align: center;
       margin: 0 auto 32px;
@@ -30,7 +33,7 @@
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     padding: 0;
-    margin: 0 0 32px 0;
+    margin: 0 auto 32px;
     justify-items: center;
     align-items: center;
     gap: 32px calc(80 / 1120 * 100%);
@@ -38,7 +41,11 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 32px calc(98 / 738 * 100%);
     }
-    outline: 2px dashed green;
+    @media (max-width: 670px) {
+      grid-template-columns: 1fr;
+      gap: 32px 0px;
+      margin-bottom: 48px;
+    }
   }
 
   &__message {
