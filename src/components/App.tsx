@@ -11,8 +11,8 @@ import projectsList from "../utils/projects-list";
 const App: Component = () => {
   return (
     <>
-      <Intro />
-      <AboutMe />
+      {/* <Intro />
+      <AboutMe /> */}
       <Projects>
         <For each={projectsList}>
           {(project) => <li>{ProjectCard(project)}</li>}

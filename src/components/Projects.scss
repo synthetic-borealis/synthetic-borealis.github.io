@@ -4,8 +4,12 @@
   &__wrapper {
     width: calc(1120 / 1280 * 100%);
     max-width: 1120px;
+    @media (max-width: 1024px) {
+      width: calc(738 / 834 * 100%);
+      max-width: 738px;
+    }
     margin: 96px auto;
-    // outline: 2px dashed red;
+    outline: 2px dashed red;
   }
 
   &__title {
@@ -14,6 +18,10 @@
     font-weight: 900;
     letter-spacing: 0.025em;
     margin: 0 0 32px 0;
+    @media (max-width: 1024px) {
+      text-align: center;
+      margin: 0 auto 32px;
+    }
   }
 
   &__card-container {
@@ -25,8 +33,12 @@
     margin: 0 0 32px 0;
     justify-items: center;
     align-items: center;
-    gap: 32px 80px;
-    // outline: 2px dashed green;
+    gap: 32px calc(80 / 1120 * 100%);
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px calc(98 / 738 * 100%);
+    }
+    outline: 2px dashed green;
   }
 
   &__message {
