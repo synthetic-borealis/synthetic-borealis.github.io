@@ -5,7 +5,7 @@
     width: calc(1120 / 1280 * 100%);
     max-width: 1120px;
     margin: 96px auto;
-    outline: 2px dashed red;
+    // outline: 2px dashed red;
   }
 
   &__title {
@@ -17,13 +17,16 @@
   }
 
   &__card-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     padding: 0;
     margin: 0 0 32px 0;
-    justify-content: center;
-    outline: 2px dashed green;
+    justify-items: center;
+    align-items: center;
+    gap: 32px 80px;
+    // outline: 2px dashed green;
   }
 
   &__message {

@@ -1,4 +1,5 @@
 import { Component, children as Children, JSXElement } from "solid-js";
+
 import "./Projects.scss";
 
 interface IProjectsProps {
@@ -7,7 +8,7 @@ interface IProjectsProps {
 
 const Projects: Component<IProjectsProps> = (props) => {
   const children = Children(() => props.children);
-  // return <>{children()}</>;
+
   return (
     <section class="Projects" id="projects">
       <div class="Projects__wrapper">
