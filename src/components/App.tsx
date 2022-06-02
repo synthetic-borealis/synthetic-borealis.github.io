@@ -3,12 +3,15 @@ import "./App.scss";
 
 import Intro from "./Intro";
 import AboutMe from "./AboutMe";
+import Projects from "./Projects";
 
 const App: Component = () => {
   return (
     <>
-      <Intro />
-      <AboutMe />
+      {/* <Intro />
+      <AboutMe /> */}
+      <Projects>
+      </Projects>
     </>
   );
 };

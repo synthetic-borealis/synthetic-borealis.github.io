@@ -26,7 +26,7 @@
     max-width: 1120px;
     margin: 0 auto;
     padding-top: 128px;
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
       width: calc(578 / 834 * 100%);
       max-width: 578px;
       align-items: center;
@@ -45,7 +45,7 @@
     letter-spacing: 0.025em;
     margin: 0 0 16px 0;
     color: vars.$textcolour;
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
       text-align: center;
       margin-bottom: 32px;
     }
@@ -61,7 +61,7 @@
     line-height: 1.25;
     letter-spacing: 0.025em;
     margin: 0 0 48px 0;
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
       text-align: center;
       margin-bottom: 64px;
     }
@@ -79,7 +79,7 @@
     object-fit: cover;
     border-radius: 100%;
     margin: 0 auto 26px;
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
       width: 320px;
       height: 320px;
       margin-bottom: 64px;
@@ -105,7 +105,7 @@
     &:hover {
       opacity: 0.6;
     }
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
       margin: 0 16px;
     }
     @media (max-width: 670px) {
@@ -118,7 +118,7 @@
     height: 48px;
     margin: 0;
     padding: 0;
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
       width: 64px;
       height: 64px;
     }
@@ -138,7 +138,7 @@
     &:hover {
       opacity: 0.6;
     }
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
       bottom: 64px;
       left: calc(50% - 32px);
       width: 64px;
@@ -154,7 +154,7 @@
     height: 32px;
     padding: 0;
     margin: 0;
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
       width: 64px;
       height: 64px;
     }

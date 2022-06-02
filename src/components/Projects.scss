@@ -1,0 +1,38 @@
+@use "../variables.scss";
+
+.Projects {
+  &__wrapper {
+    width: calc(1120 / 1280 * 100%);
+    max-width: 1120px;
+    margin: 96px auto;
+    outline: 2px dashed red;
+  }
+
+  &__title {
+    font-size: 3rem;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    margin: 0 0 32px 0;
+  }
+
+  &__card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    justify-content: center;
+    outline: 2px dashed green;
+  }
+
+  &__message {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+}
