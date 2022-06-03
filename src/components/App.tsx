@@ -15,13 +15,13 @@ import { currentlyUsedSkills, basicSkills, currentlyLearningSkills } from "../ut
 const App: Component = () => {
   return (
     <>
-      {/* <Intro />
+      <Intro />
       <AboutMe />
       <Projects>
         <For each={projectsList}>
           {(project) => <li>{ProjectCard(project)}</li>}
         </For>
-      </Projects> */}
+      </Projects>
       <Skills>
         <SkillsList caption="Currently Using">
           <For each={currentlyUsedSkills}>
