@@ -1,8 +1,13 @@
 @use "../variables.scss" as vars;
 
 .SkillsList {
-  width: 100%;
+  width: calc(760 / 1120 * 100%);
+  max-width: 760px;
   margin: 0 0 48px;
+  @media (max-width: 1024px) {
+    width: calc(496 / 738 * 100%);
+    max-width: 496px;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
@@ -21,11 +26,11 @@
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(6, 1fr) 100%;
+    grid-template-columns: repeat(6, 1fr);
     gap: 32px calc(32 / 1120 * 100%);
     @media (max-width: 1024px) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 32px calc(32 / 738 * 100%);
+      grid-template-columns: repeat(4, minmax(100px, 1fr));
+      gap: 32px;
     }
     @media (max-width: 670px) {
       grid-template-columns: repeat(3, 1fr);
