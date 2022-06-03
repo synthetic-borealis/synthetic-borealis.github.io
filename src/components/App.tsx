@@ -33,7 +33,7 @@ const App: Component = () => {
             {(skill) => SkillCard(skill)}
           </For>
         </SkillsList>
-        <SkillsList caption="Currently Learning">
+        <SkillsList caption="Learning">
           <For each={currentlyLearningSkills}>
             {(skill) => SkillCard(skill)}
           </For>

@@ -8,6 +8,11 @@
     width: calc(496 / 738 * 100%);
     max-width: 496px;
   }
+  @media (max-width: 670px) {
+    width: 100%;
+    max-width: 316px;
+    margin-bottom: 32px;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
@@ -19,6 +24,8 @@
     letter-spacing: 0.025em;
     font-weight: 900;
     margin: 0 0 16px;
+    min-width: 100%;
+
   }
 
   &__card-container {
