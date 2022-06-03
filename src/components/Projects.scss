@@ -1,7 +1,7 @@
 @use "../variables.scss";
 
 .Projects {
-  &__wrapper {
+  &__container {
     width: calc(1120 / 1280 * 100%);
     max-width: 1120px;
     margin: 96px auto;

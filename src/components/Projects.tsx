@@ -6,12 +6,12 @@ interface IProjectsProps {
   children: JSXElement;
 }
 
-const Projects: Component<IProjectsProps> = (props) => {
+const Projects: Component<IProjectsProps> = (props: IProjectsProps) => {
   const children = Children(() => props.children);
 
   return (
     <section class="Projects" id="projects">
-      <div class="Projects__wrapper">
+      <div class="Projects__container">
         <h2 class="Projects__title">Projects</h2>
         <ul class="Projects__card-container">
           {children()}

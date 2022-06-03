@@ -1,0 +1,30 @@
+@use "../variables.scss" as vars;
+
+.Skills {
+  &__container {
+    width: calc(1120 / 1280 * 100%);
+    max-width: 1120px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    outline: 2px dashed red;
+  }
+
+  &__title {
+    font-size: 3rem;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    font-weight: 900;
+    color: vars.$textcolour;
+    margin: 0 0 32px;
+  }
+
+  &__lists-container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    outline: 3px dashed blue;
+  }
+}
