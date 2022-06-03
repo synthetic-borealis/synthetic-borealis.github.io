@@ -8,6 +8,7 @@ import ProjectCard from "./ProjectCard";
 import Skills from "./Skills";
 import SkillsList from "./SkillsList";
 import SkillCard from "./SkillCard";
+import Footer from "./Footer";
 
 import projectsList from "../utils/projects-list";
 import { currentlyUsedSkills, basicSkills, currentlyLearningSkills } from "../utils/skill-lists";
@@ -33,12 +34,13 @@ const App: Component = () => {
             {(skill) => SkillCard(skill)}
           </For>
         </SkillsList>
-        <SkillsList caption="Learning">
+        <SkillsList caption="Currently Learning">
           <For each={currentlyLearningSkills}>
             {(skill) => SkillCard(skill)}
           </For>
         </SkillsList>
       </Skills>
+      <Footer />
     </>
   );
 };
