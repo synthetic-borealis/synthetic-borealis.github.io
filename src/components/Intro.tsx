@@ -5,6 +5,7 @@ import avatarImg from "../images/avatar.jpg";
 import githubIcon from "../images/icons/icon-github.svg";
 import linkedinIcon from "../images/icons/icon-linkedin.svg";
 import twitterIcon from "../images/icons/icon-twitter.svg";
+import cvIcon from "../images/icons/icon-cv.svg";
 import downIcon from "../images/icons/icon-downArrow.svg";
 
 const Intro: Component = () => {
@@ -52,6 +53,19 @@ const Intro: Component = () => {
               <img
                 class="Intro__social-icon"
                 src={twitterIcon}
+                alt="Twitter icon"
+              />
+            </a>
+          </li>
+          <li class="Intro__social-link">
+            <a
+              href="https://drive.google.com/file/d/18nlWDhxVmxxyEETQNJQhSDOQtdXN0ruZ/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="Intro__social-icon"
+                src={cvIcon}
                 alt="Twitter icon"
               />
             </a>

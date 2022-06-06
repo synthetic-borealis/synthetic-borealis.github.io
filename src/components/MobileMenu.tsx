@@ -21,7 +21,7 @@ const MobileMenu: Component<IMobileMenuProps> = (props: IMobileMenuProps) => {
       <ul class="MobileMenu__link-container">
         {children()}
       </ul>
-      <button class="MobileMenu__arrows" onClick={closeMenu} />
+      <button class="MobileMenu__arrows" onClick={closeMenu} aria-label="Another close menu button" />
     </div>
     );
 };

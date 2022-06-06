@@ -67,6 +67,7 @@ const NavBar: Component = () => {
             <button
               class={isMenuOpen() ? "NavBar__menu-button NavBar__menu-button_close" : "NavBar__menu-button"}
               onClick={handleMenuButtonClick}
+              aria-label={isMenuOpen() ? "Menu button" : "Close menu button"}
             />
           </div>
         ) : (
