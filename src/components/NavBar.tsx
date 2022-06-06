@@ -28,13 +28,11 @@ const NavBar: Component = () => {
   }
 
   function openMenu() {
-    console.log("openMenu");
     setIsMenuOpen(true);
     setTimeout(() => setIsMenuVisible(true));
   }
 
   function closeMenu() {
-    console.log("closeMenu");
     setIsMenuVisible(false);
     setTimeout(() => setIsMenuOpen(false), menuTransitionDuration);
   }
