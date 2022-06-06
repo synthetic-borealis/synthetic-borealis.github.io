@@ -26,6 +26,9 @@
     @media (max-width: 900px) {
       width: calc(674 / 834 * 100%);
     }
+    @media (max-width: 670px) {
+      width: calc(348 / 412 * 100%);
+    }
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -71,6 +74,9 @@
       font-size: 3rem;
       line-height: 1;
       text-align: center;
+    }
+    @media (max-width: 670px) {
+      font-size: 2rem;
     }
     line-height: 1.25;
     font-weight: 700;

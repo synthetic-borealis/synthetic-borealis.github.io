@@ -94,7 +94,7 @@ const NavBar: Component = () => {
           </ul>
         )}
       </nav>
-      {isMenuOpen && isMobileOrTablet ? (
+      {isMenuOpen() && isMobileOrTablet() ? (
         <MobileMenu isMenuVisible={isMenuVisible()} closeMenuFunc={closeMenu}>
           <li class="NavBar__link-wrapper">
             <a href="#" class="NavBar__link" onClick={closeMenu}>

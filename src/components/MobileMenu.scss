@@ -23,9 +23,11 @@
     flex-direction: column;
     align-items: center;
     margin: 160px auto 0;
+    @media (max-width: 670px) {
+      margin-top: 112px;
+    }
     list-style: none;
     padding: 0;
-    outline: 2px dashed tomato;
   }
 
   &__arrows {
