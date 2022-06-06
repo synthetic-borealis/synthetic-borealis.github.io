@@ -1,0 +1,39 @@
+@use "../variables.scss" as vars;
+
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: vars.$navbgcolour;
+  box-sizing: border-box;
+  border-bottom: 1px solid vars.$navbordercolour;
+  padding: 20px 0;
+  max-height: 80px;
+  z-index: 2;
+
+  &__container {
+    width: calc(1120 / 1280 * 100%);
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__link-wrapper {
+    margin: 0 32px 0 0;
+  }
+
+  &__link {
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 700;
+    color: vars.$linkcolour;
+    text-decoration: none;
+    transition: opacity 0.25s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

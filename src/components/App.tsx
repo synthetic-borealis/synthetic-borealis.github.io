@@ -1,6 +1,7 @@
 import { Component, For } from "solid-js";
 import "./App.scss";
 
+import NavBar from "./NavBar";
 import Intro from "./Intro";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
@@ -16,6 +17,7 @@ import { currentlyUsedSkills, basicSkills, currentlyLearningSkills } from "../ut
 const App: Component = () => {
   return (
     <>
+    <NavBar />
       <Intro />
       <AboutMe />
       <Projects>
