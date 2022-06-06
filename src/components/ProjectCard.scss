@@ -1,0 +1,53 @@
+@use "../variables.scss" as vars;
+
+.ProjectCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: vars.$cardbgcolour;
+
+  &__thumbnail {
+    margin: 0 0 8px 0;
+    width: 320px;
+    height: 180px;
+  }
+
+  &__caption {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    color: vars.$textcolour;
+    width: calc(100% - 32px);
+    margin: 0 auto 8px;
+  }
+
+  &__description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    min-height: calc(4 * 1.5em);
+    width: calc(100% - 32px);
+    margin: 0 auto 32px;
+    color: vars.$textcolour;
+    overflow: hidden;
+  }
+
+  &__repo-link {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: vars.$linkcolour;
+    margin: 0 auto 16px;
+    transition: opacity 0.25s ease-in-out;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

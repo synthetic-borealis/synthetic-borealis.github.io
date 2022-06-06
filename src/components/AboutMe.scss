@@ -1,0 +1,76 @@
+@use "../variables.scss" as vars;
+
+.AboutMe {
+  &__container {
+    width: calc(1120 / 1280 * 100%);
+    max-width: 1120px;
+    margin: 96px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media (max-width: 1024px) {
+      width: calc(574 / 824 * 100%);
+      max-width: 574px;
+    }
+    @media (max-width: 670px) {
+      margin: 80px auto;
+      width: calc(364 / 412 * 100%);
+      max-width: 364px;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    font-weight: 900;
+    color: vars.$textcolour;
+    margin: 0 0 32px 0;
+    @media (max-width: 1024px) {
+      text-align: center;
+      margin: 0 auto 32px;
+    }
+    @media (max-width: 670px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__paragraphs-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+    color: vars.$textcolour;
+    margin: 0;
+    @media (max-width: 1024px) {
+      font-size: 1.125rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    @media (max-width: 670px) {
+      font-size: 1rem;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    }
+
+    &-item {
+      margin: 0 0 16px 0;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

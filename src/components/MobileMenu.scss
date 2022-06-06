@@ -1,0 +1,52 @@
+@use "../variables.scss" as vars;
+
+.MobileMenu {
+  position: fixed;
+  top: calc(0px - (100vh - 96px));
+  @media (max-width: 670px) {
+    top: calc(0px - (100vh - 64px));
+  }
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: vars.$menubgcolour;
+  backdrop-filter: blur(16px);
+  z-index: 2;
+  transition: top 0.25s ease-in-out;
+
+  &_visible {
+    top: 0;
+  }
+
+  &__link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 160px auto 0;
+    @media (max-width: 670px) {
+      margin-top: 112px;
+    }
+    list-style: none;
+    padding: 0;
+  }
+
+  &__arrows {
+    position: absolute;
+    bottom: 128px;
+    left: calc(50% - 40px);
+    content: "";
+    background-color: transparent;
+    background-image: url("../images/icons/icon-upArrow.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    border: 0;
+    @media (max-width: 670px) {
+      width: 64px;
+      height: 64px;
+      left: calc(50% - 32px);
+    }
+  }
+}
