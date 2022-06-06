@@ -8,7 +8,7 @@
   background-color: vars.$navbgcolour;
   box-sizing: border-box;
   border-bottom: 1px solid vars.$navbordercolour;
-  padding: 20px 0;
+  padding: 16px 0;
   max-height: 80px;
   @media (max-width: 900px) {
     max-height: 96px;
@@ -69,7 +69,10 @@
   }
 
   &__link {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 700;
+    color: vars.$linkcolour;
     @media (max-width: 900px) {
       font-size: 3rem;
       line-height: 1;
@@ -78,9 +81,6 @@
     @media (max-width: 670px) {
       font-size: 2rem;
     }
-    line-height: 1.25;
-    font-weight: 700;
-    color: vars.$linkcolour;
     text-decoration: none;
     transition: opacity 0.25s ease-in-out;
     &:hover {
