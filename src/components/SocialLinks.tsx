@@ -11,55 +11,31 @@ import cvIcon from "../images/icons/icon-cv.svg";
 const SocialLinks: Component<ISocialLinksData> = (props: ISocialLinksData) => {
   return (
     <ul class="SocialLinks">
-          <li class="SocialLinks__link">
-            <a
-              href={props.githubLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                class="SocialLinks__icon"
-                src={githubIcon}
-                alt="Github icon"
-              />
-            </a>
-          </li>
-          <li class="SocialLinks__link">
-            <a
-              href={props.linkedinLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                class="SocialLinks__icon"
-                src={linkedinIcon}
-                alt="LinkedIn icon"
-              />
-            </a>
-          </li>
-          <li class="SocialLinks__link">
-            <a
-              href={props.twitterLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                class="SocialLinks__icon"
-                src={twitterIcon}
-                alt="Twitter icon"
-              />
-            </a>
-          </li>
-          <li class="SocialLinks__link">
-            <a
-              href={props.resumeLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img class="SocialLinks__icon" src={cvIcon} alt="Resume icon" />
-            </a>
-          </li>
-        </ul>
+      <li class="SocialLinks__link">
+        <a href={props.githubLink} target="_blank" rel="noreferrer">
+          <img class="SocialLinks__icon" src={githubIcon} alt="Github icon" />
+        </a>
+      </li>
+      <li class="SocialLinks__link">
+        <a href={props.linkedinLink} target="_blank" rel="noreferrer">
+          <img
+            class="SocialLinks__icon"
+            src={linkedinIcon}
+            alt="LinkedIn icon"
+          />
+        </a>
+      </li>
+      <li class="SocialLinks__link">
+        <a href={props.twitterLink} target="_blank" rel="noreferrer">
+          <img class="SocialLinks__icon" src={twitterIcon} alt="Twitter icon" />
+        </a>
+      </li>
+      <li class="SocialLinks__link">
+        <a href={props.resumeLink} target="_blank" rel="noreferrer">
+          <img class="SocialLinks__icon" src={cvIcon} alt="Resume icon" />
+        </a>
+      </li>
+    </ul>
   );
 };
 

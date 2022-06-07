@@ -1,9 +1,15 @@
 import { Component, JSXElement, children as Children } from "solid-js";
+import SocialLinks from "./SocialLinks";
+
+import ISocialLinksData from "../interfaces/social-links-data";
+
 import "./MobileMenu.scss";
+import socialLinksData from "../utils/social-links";
 
 interface IMobileMenuProps {
   isMenuVisible: boolean;
   closeMenuFunc(): void;
+  socialLinks: ISocialLinksData;
   children: JSXElement;
 }
 
@@ -21,6 +27,7 @@ const MobileMenu: Component<IMobileMenuProps> = (props: IMobileMenuProps) => {
       <ul class="MobileMenu__link-container">
         {children()}
       </ul>
+      {SocialLinks(socialLinksData)}
       <button class="MobileMenu__arrows" onClick={closeMenu} aria-label="Another close menu button" />
     </div>
     );

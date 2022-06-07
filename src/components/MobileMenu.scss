@@ -2,6 +2,9 @@
 
 .MobileMenu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: calc(0px - (100vh - 96px));
   @media (max-width: 670px) {
     top: calc(0px - (100vh - 64px));
@@ -22,9 +25,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 160px auto 0;
+    margin: 160px auto 256px;
     @media (max-width: 670px) {
-      margin-top: 112px;
+      margin: 112px auto 128px;
     }
     list-style: none;
     padding: 0;
@@ -32,7 +35,7 @@
 
   &__arrows {
     position: absolute;
-    bottom: 128px;
+    bottom: 32px;
     left: calc(50% - 40px);
     content: "";
     background-color: transparent;
