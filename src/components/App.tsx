@@ -11,14 +11,19 @@ import SkillsList from "./SkillsList";
 import SkillCard from "./SkillCard";
 import Footer from "./Footer";
 
+import socialLinksData from "../utils/social-links";
 import projectsList from "../utils/projects-list";
-import { currentlyUsedSkills, basicSkills, currentlyLearningSkills } from "../utils/skill-lists";
+import {
+  currentlyUsedSkills,
+  basicSkills,
+  currentlyLearningSkills,
+} from "../utils/skill-lists";
 
 const App: Component = () => {
   return (
     <>
-    <NavBar />
-      <Intro />
+      <NavBar />
+      <Intro socialLinks={socialLinksData} />
       <AboutMe />
       <Projects>
         <For each={projectsList}>
@@ -27,14 +32,10 @@ const App: Component = () => {
       </Projects>
       <Skills>
         <SkillsList caption="Currently Using">
-          <For each={currentlyUsedSkills}>
-            {(skill) => SkillCard(skill)}
-          </For>
+          <For each={currentlyUsedSkills}>{(skill) => SkillCard(skill)}</For>
         </SkillsList>
         <SkillsList caption="Basic">
-          <For each={basicSkills}>
-            {(skill) => SkillCard(skill)}
-          </For>
+          <For each={basicSkills}>{(skill) => SkillCard(skill)}</For>
         </SkillsList>
         <SkillsList caption="Currently Learning">
           <For each={currentlyLearningSkills}>
