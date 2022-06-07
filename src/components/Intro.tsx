@@ -1,14 +1,17 @@
 import { Component } from "solid-js";
+import SocialLinks from "./SocialLinks";
+import ISocialLinksData from "../interfaces/social-links-data";
+
 import "./Intro.scss";
 
 import avatarImg from "../images/avatar.jpg";
-import githubIcon from "../images/icons/icon-github.svg";
-import linkedinIcon from "../images/icons/icon-linkedin.svg";
-import twitterIcon from "../images/icons/icon-twitter.svg";
-import cvIcon from "../images/icons/icon-cv.svg";
 import downIcon from "../images/icons/icon-downArrow.svg";
 
-const Intro: Component = () => {
+interface IIntroProps {
+  socialLinks: ISocialLinksData;
+}
+
+const Intro: Component<IIntroProps> = (props: IIntroProps) => {
   return (
     <header class="Intro" id="home">
       <div class="Intro__container">
@@ -17,60 +20,7 @@ const Intro: Component = () => {
           I’m a full-stack developer. Programming is my passion.
         </p>
         <img class="Intro__avatar" src={avatarImg} alt="Owner avatar" />
-        <ul class="Intro__social-links">
-          <li class="Intro__social-link">
-            <a
-              href="https://github.com/synthetic-borealis"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                class="Intro__social-icon"
-                src={githubIcon}
-                alt="Github icon"
-              />
-            </a>
-          </li>
-          <li class="Intro__social-link">
-            <a
-              href="https://www.linkedin.com/in/elhanan-flesch/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                class="Intro__social-icon"
-                src={linkedinIcon}
-                alt="LinkedIn icon"
-              />
-            </a>
-          </li>
-          <li class="Intro__social-link">
-            <a
-              href="https://twitter.com/AlignedSpud"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                class="Intro__social-icon"
-                src={twitterIcon}
-                alt="Twitter icon"
-              />
-            </a>
-          </li>
-          <li class="Intro__social-link">
-            <a
-              href="https://drive.google.com/file/d/18nlWDhxVmxxyEETQNJQhSDOQtdXN0ruZ/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                class="Intro__social-icon"
-                src={cvIcon}
-                alt="Twitter icon"
-              />
-            </a>
-          </li>
-        </ul>
+        {SocialLinks(props.socialLinks)}
       </div>
       <a class="Intro__down-link" href="#about-me">
         <img
