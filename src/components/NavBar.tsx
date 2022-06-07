@@ -5,14 +5,13 @@ import SocialLinks from "./SocialLinks";
 import ISocialLinksData from "../interfaces/social-links-data";
 
 import "./NavBar.scss";
-import socialLinksData from "../utils/social-links";
 
 interface INavBarProps {
   socialLinks: ISocialLinksData;
 }
 
 const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
-  const mobileWidthThreshold = 900;
+  const mobileWidthThreshold = 1024;
   const [isMobileOrTablet, setIsMobileOrTablet] = createSignal<boolean>(
     window.innerWidth <= mobileWidthThreshold
   );
@@ -99,13 +98,13 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
                   </a>
                 </li>
               </ul>
-              {SocialLinks(socialLinksData)}
+              {SocialLinks(props.socialLinks)}
             </>
           )}
         </div>
       </nav>
       {isMenuOpen() && isMobileOrTablet() ? (
-        <MobileMenu isMenuVisible={isMenuVisible()} closeMenuFunc={closeMenu}>
+        <MobileMenu isMenuVisible={isMenuVisible()} closeMenuFunc={closeMenu} socialLinks={props.socialLinks}>
           <li class="NavBar__link-wrapper">
             <a href="#" class="NavBar__link" onClick={closeMenu}>
               Home

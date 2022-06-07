@@ -1,7 +1,7 @@
 .SocialLinks {
   display: flex;
   justify-content: center;
-  margin: 0;
+  align-items: center;
   padding: 0;
   list-style: none;
 
@@ -12,10 +12,10 @@
       opacity: 0.6;
     }
     @media (max-width: 1024px) {
-      margin: 0 16px;
+      margin: 0 0 0 48px;
     }
     @media (max-width: 670px) {
-      margin: 0 8px;
+      margin: 0 0 0 32px;
     }
     &::last-of-type {
       margin: 0;

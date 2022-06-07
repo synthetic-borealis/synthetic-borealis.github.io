@@ -1,5 +1,4 @@
 import { Component } from "solid-js";
-import ISocialLinksData from "../interfaces/social-links-data";
 
 import "./Intro.scss";
 
