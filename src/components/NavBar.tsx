@@ -1,15 +1,17 @@
-import {
-  Component,
-  createSignal,
-  onCleanup,
-  onMount,
-} from "solid-js";
+import { Component, createSignal, onCleanup, onMount } from "solid-js";
 
 import MobileMenu from "./MobileMenu";
+import SocialLinks from "./SocialLinks";
+import ISocialLinksData from "../interfaces/social-links-data";
 
 import "./NavBar.scss";
+import socialLinksData from "../utils/social-links";
 
-const NavBar: Component = () => {
+interface INavBarProps {
+  socialLinks: ISocialLinksData;
+}
+
+const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
   const mobileWidthThreshold = 900;
   const [isMobileOrTablet, setIsMobileOrTablet] = createSignal<boolean>(
     window.innerWidth <= mobileWidthThreshold
@@ -60,38 +62,47 @@ const NavBar: Component = () => {
   return (
     <>
       <nav class="NavBar">
-        {isMobileOrTablet() ? (
-          <div class="NavBar__container">
-            <button
-              class={isMenuOpen() ? "NavBar__menu-button NavBar__menu-button_close" : "NavBar__menu-button"}
-              onClick={handleMenuButtonClick}
-              aria-label={isMenuOpen() ? "Menu button" : "Close menu button"}
-            />
-          </div>
-        ) : (
-          <ul class="NavBar__container">
-            <li class="NavBar__link-wrapper">
-              <a href="#" class="NavBar__link">
-                Home
-              </a>
-            </li>
-            <li class="NavBar__link-wrapper">
-              <a href="#about-me" class="NavBar__link">
-                About Me
-              </a>
-            </li>
-            <li class="NavBar__link-wrapper">
-              <a href="#projects" class="NavBar__link">
-                Projects
-              </a>
-            </li>
-            <li class="NavBar__link-wrapper">
-              <a href="#skills" class="NavBar__link">
-                Skills
-              </a>
-            </li>
-          </ul>
-        )}
+        <div class="NavBar__container">
+          {isMobileOrTablet() ? (
+            <div class="NavBar__link-container">
+              <button
+                class={
+                  isMenuOpen()
+                    ? "NavBar__menu-button NavBar__menu-button_close"
+                    : "NavBar__menu-button"
+                }
+                onClick={handleMenuButtonClick}
+                aria-label={isMenuOpen() ? "Menu button" : "Close menu button"}
+              />
+            </div>
+          ) : (
+            <>
+              <ul class="NavBar__link-container">
+                <li class="NavBar__link-wrapper">
+                  <a href="#" class="NavBar__link">
+                    Home
+                  </a>
+                </li>
+                <li class="NavBar__link-wrapper">
+                  <a href="#about-me" class="NavBar__link">
+                    About Me
+                  </a>
+                </li>
+                <li class="NavBar__link-wrapper">
+                  <a href="#projects" class="NavBar__link">
+                    Projects
+                  </a>
+                </li>
+                <li class="NavBar__link-wrapper">
+                  <a href="#skills" class="NavBar__link">
+                    Skills
+                  </a>
+                </li>
+              </ul>
+              {SocialLinks(socialLinksData)}
+            </>
+          )}
+        </div>
       </nav>
       {isMenuOpen() && isMobileOrTablet() ? (
         <MobileMenu isMenuVisible={isMenuVisible()} closeMenuFunc={closeMenu}>

@@ -22,8 +22,8 @@ import {
 const App: Component = () => {
   return (
     <>
-      <NavBar />
-      <Intro socialLinks={socialLinksData} />
+      <NavBar socialLinks={socialLinksData} />
+      <Intro />
       <AboutMe />
       <Projects>
         <For each={projectsList}>
