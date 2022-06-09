@@ -15,6 +15,7 @@ const projectsList: Array<IProjectCardData> = [
     name: "Around the U.S.",
     thumbnail: aroundTheUsThumbnail,
     description: "An image sharing app for travel lovers.",
+    liveUrl: "https://synthetic-borealis.github.io/react-around-api-full",
     repoUrl: "https://github.com/synthetic-borealis/react-around-api-full",
   },
   {
