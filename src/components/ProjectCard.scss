@@ -38,13 +38,29 @@
     overflow: hidden;
   }
 
-  &__repo-link {
+  &__link-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 16px;
+  }
+
+  &__link-wrapper {
+    margin-right: 32px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__link {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 700;
     letter-spacing: 0.025em;
     color: vars.$linkcolour;
-    margin: 0 auto 16px;
+    // margin: 0 auto 16px;
     transition: opacity 0.25s ease-in-out;
     &:hover {
       opacity: 0.6;
