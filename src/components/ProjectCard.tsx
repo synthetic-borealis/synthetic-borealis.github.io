@@ -16,12 +16,26 @@ const ProjectCard: Component<IProjectCardData> = (data: IProjectCardData) => {
       <ul class="ProjectCard__link-container">
         <Show when={data.liveUrl}>
           <li class="ProjectCard__link-wrapper">
-            <a class="ProjectCard__link" href={data.liveUrl} target="_blank" rel="noreferrer">Live Site</a>
+            <a
+              class="ProjectCard__link"
+              href={data.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Site
+            </a>
           </li>
         </Show>
         <Show when={data.repoUrl}>
           <li class="ProjectCard__link-wrapper">
-            <a class="ProjectCard__link" href={data.repoUrl} target="_blank" rel="noreferrer">Source Code</a>
+            <a
+              class="ProjectCard__link"
+              href={data.repoUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Source Code
+            </a>
           </li>
         </Show>
       </ul>

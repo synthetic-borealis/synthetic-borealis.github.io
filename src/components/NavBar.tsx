@@ -104,7 +104,11 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
         </div>
       </nav>
       {isMenuOpen() && isMobileOrTablet() ? (
-        <MobileMenu isMenuVisible={isMenuVisible()} closeMenuFunc={closeMenu} socialLinks={props.socialLinks}>
+        <MobileMenu
+          isMenuVisible={isMenuVisible()}
+          closeMenuFunc={closeMenu}
+          socialLinks={props.socialLinks}
+        >
           <li class="NavBar__link-wrapper">
             <a href="#" class="NavBar__link" onClick={closeMenu}>
               Home

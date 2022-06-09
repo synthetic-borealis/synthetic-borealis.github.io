@@ -1,5 +1,4 @@
 import { Component, For } from "solid-js";
-import "./App.scss";
 
 import NavBar from "./NavBar";
 import Intro from "./Intro";

@@ -4,10 +4,12 @@
   width: calc(760 / 1120 * 100%);
   max-width: 760px;
   margin: 0 0 48px;
+
   @media (max-width: 1024px) {
     width: calc(496 / 738 * 100%);
     max-width: 496px;
   }
+
   @media (max-width: 670px) {
     width: 100%;
     max-width: 316px;
@@ -25,7 +27,6 @@
     font-weight: 900;
     margin: 0 0 16px;
     min-width: 100%;
-
   }
 
   &__card-container {
@@ -35,10 +36,12 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 32px calc(32 / 1120 * 100%);
+
     @media (max-width: 1024px) {
       grid-template-columns: repeat(4, minmax(100px, 1fr));
       gap: 32px;
     }
+
     @media (max-width: 670px) {
       grid-template-columns: repeat(3, 1fr);
       gap: 8px calc(8 / 316 * 100%);

@@ -8,7 +8,7 @@
   background-color: vars.$cardbgcolour;
 
   &__thumbnail {
-    margin: 0 0 8px 0;
+    margin: 0 0 8px;
     width: 320px;
     height: 180px;
   }
@@ -60,8 +60,8 @@
     font-weight: 700;
     letter-spacing: 0.025em;
     color: vars.$linkcolour;
-    // margin: 0 auto 16px;
     transition: opacity 0.25s ease-in-out;
+
     &:hover {
       opacity: 0.6;
     }
