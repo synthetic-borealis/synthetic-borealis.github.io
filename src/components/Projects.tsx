@@ -13,9 +13,7 @@ const Projects: Component<IProjectsProps> = (props: IProjectsProps) => {
     <section class="Projects" id="projects">
       <div class="Projects__container">
         <h2 class="Projects__title">Projects</h2>
-        <ul class="Projects__card-container">
-          {children()}
-        </ul>
+        <ul class="Projects__card-container">{children()}</ul>
         <p class="Projects__message">
           Check out my Github account for more projects.
         </p>

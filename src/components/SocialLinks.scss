@@ -8,15 +8,19 @@
   &__link {
     margin: 0 16px 0 0;
     transition: opacity 0.25s ease-in-out;
+
     &:hover {
       opacity: 0.6;
     }
+
     @media (max-width: 1024px) {
       margin: 0 48px 0 0;
     }
+
     @media (max-width: 670px) {
       margin: 0 32px 0 0;
     }
+
     &:last-of-type {
       margin: 0;
     }
@@ -27,10 +31,12 @@
     height: 32px;
     margin: 0;
     padding: 0;
+
     @media (max-width: 1024px) {
       width: 64px;
       height: 64px;
     }
+
     @media (max-width: 670px) {
       width: 48px;
       height: 48px;

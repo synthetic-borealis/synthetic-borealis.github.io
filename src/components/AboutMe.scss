@@ -9,10 +9,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
     @media (max-width: 1024px) {
       width: calc(574 / 824 * 100%);
       max-width: 574px;
     }
+
     @media (max-width: 670px) {
       margin: 80px auto;
       width: calc(364 / 412 * 100%);
@@ -74,6 +76,7 @@
 
     &-item {
       margin: 0 0 16px;
+
       &:last-of-type {
         margin-bottom: 0;
       }

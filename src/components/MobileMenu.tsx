@@ -23,14 +23,20 @@ const MobileMenu: Component<IMobileMenuProps> = (props: IMobileMenuProps) => {
   }
 
   return (
-    <div class={props.isMenuVisible ? "MobileMenu MobileMenu_visible" : "MobileMenu"}>
-      <ul class="MobileMenu__link-container">
-        {children()}
-      </ul>
+    <div
+      class={
+        props.isMenuVisible ? "MobileMenu MobileMenu_visible" : "MobileMenu"
+      }
+    >
+      <ul class="MobileMenu__link-container">{children()}</ul>
       {SocialLinks(socialLinksData)}
-      <button class="MobileMenu__arrows" onClick={closeMenu} aria-label="Another close menu button" />
+      <button
+        class="MobileMenu__arrows"
+        onClick={closeMenu}
+        aria-label="Another close menu button"
+      />
     </div>
-    );
+  );
 };
 
 export default MobileMenu;

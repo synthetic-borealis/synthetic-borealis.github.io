@@ -2,20 +2,22 @@
 
 .Skills {
   &__container {
+    display: flex;
+    flex-direction: column;
     width: calc(1120 / 1280 * 100%);
     max-width: 1120px;
     margin: 100px auto;
+
     @media (max-width: 1024px) {
       width: calc(738 / 834 * 100%);
       max-width: 738px;
       margin: 96px auto;
     }
+
     @media (max-width: 670px) {
       width: 316px;
       margin: 72px auto;
     }
-    display: flex;
-    flex-direction: column;
   }
 
   &__title {
@@ -25,9 +27,11 @@
     font-weight: 900;
     color: vars.$textcolour;
     margin: 0 0 32px;
+
     @media (max-width: 1024px) {
       text-align: center;
     }
+
     @media (max-width: 670px) {
       margin-bottom: 16px;
     }

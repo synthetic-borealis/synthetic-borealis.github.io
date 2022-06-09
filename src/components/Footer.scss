@@ -3,6 +3,7 @@
 .Footer {
   background-color: vars.$footerbgcolour;
   padding: 31px 0;
+
   @media (max-width: 670px) {
     padding: 20px 0;
   }
@@ -11,10 +12,12 @@
     width: calc(1184 / 1280 * 100%);
     max-width: 1184px;
     margin: 0 auto;
+
     @media (max-width: 1024px) {
       width: calc(738 / 834 * 100%);
       max-width: 738px;
     }
+
     @media (max-width: 670px) {
       min-width: 310px;
     }
@@ -26,6 +29,7 @@
     font-weight: 700;
     letter-spacing: 0.025em;
     margin: 0;
+
     @media (max-width: 670px) {
       font-size: 1rem;
       text-align: center;
