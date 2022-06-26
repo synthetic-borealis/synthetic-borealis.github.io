@@ -13,10 +13,11 @@ import pythonIcon from "../images/logos/logo-python.svg";
 import cppIcon from "../images/logos/logo-cpp.svg";
 import csharpIcon from "../images/logos/logo-csharp.svg";
 
-// Basic Skills
+// Learning Skills
 import typescriptIcon from "../images/logos/logo-typescript.svg";
 import sassIcon from "../images/logos/logo-sass.svg";
 import solidIcon from "../images/logos/logo-solidjs.svg";
+import kotlinIcon from "../images/logos/logo-kotlin.svg";
 
 export const currentlyUsedSkills: Array<ISkillData> = [
   {
@@ -58,6 +59,10 @@ export const basicSkills: Array<ISkillData> = [
     name: "C#",
     icon: csharpIcon,
   },
+  {
+    name: "Solid.js",
+    icon: solidIcon,
+  },
 ];
 
 export const currentlyLearningSkills: Array<ISkillData> = [
@@ -70,7 +75,7 @@ export const currentlyLearningSkills: Array<ISkillData> = [
     icon: sassIcon,
   },
   {
-    name: "Solid.js",
-    icon: solidIcon,
-  },
+    name: "Kotlin",
+    icon: kotlinIcon
+  }
 ];
