@@ -1,8 +1,8 @@
 import IProjectCardData from "../interfaces/project-card-data";
 
-import newsExplorerThumbnail from "../images/project-tumbnails/news-explorer-screenshot.jpg";
-import aroundTheUsThumbnail from "../images/project-tumbnails/around-the-us-screenshot.jpg";
-import npmLogo from "../images/project-tumbnails/npm-logo.jpg";
+import newsExplorerThumbnail from "../images/project-tumbnails/news-explorer-screenshot.webp";
+import aroundTheUsThumbnail from "../images/project-tumbnails/around-the-us-screenshot.webp";
+import npmLogo from "../images/project-tumbnails/npm-logo.webp";
 
 const projectsList: Array<IProjectCardData> = [
   {
