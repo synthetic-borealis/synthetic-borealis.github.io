@@ -15,8 +15,6 @@ interface IMobileMenuProps {
 
 const MobileMenu: Component<IMobileMenuProps> = (props: IMobileMenuProps) => {
   const children = Children(() => props.children);
-  // const [startY, setStartY] = createSignal(0);
-  // const [startTime, setStartTime] = createSignal(0);
 
   function closeMenu() {
     props.closeMenuFunc();
