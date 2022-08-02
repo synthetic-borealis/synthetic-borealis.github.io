@@ -1,9 +1,17 @@
 // Dark theme
-$bgcolour: #222222;
-$menubgcolour: rgb(51, 51, 51, 0.5);
-$navbgcolour: #111122;
-$navbordercolour: #adadde;
-$textcolour: #ededfd;
-$linkcolour: #fdfdfd;
-$cardbgcolour: #333344;
-$footerbgcolour: #222244;
+// $bgcolour: #222222;
+// $menubgcolour: rgb(51, 51, 51, 0.5);
+// $navbgcolour: #111122;
+// $cardbgcolour: #333344;
+// $footerbgcolour: #222244;
+// $navbordercolour: #adadde;
+// $textcolour: #ededfd;
+// $linkcolour: #fdfdfd;
+$bgcolour: var(--main-bg-colour);
+$menubgcolour: var(--menu-bg-colour);
+$navbgcolour: var(--nav-bg-colour);
+$cardbgcolour: var(--card-bg-colour);
+$footerbgcolour: var(--footer-bg-colour);
+$navbordercolour: var(--nav-border-colour);
+$textcolour: var(--text-colour);
+$linkcolour: var(--link-colour);
