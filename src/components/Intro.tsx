@@ -3,8 +3,9 @@ import { Portal } from "solid-js/web";
 
 import "./Intro.scss";
 
-import avatarImg from "../images/avatar.webp";
+import ArrowDownIcon from "./icons/ArrowDownIcon";
 import downIcon from "../images/icons/icon-downArrow.svg";
+import avatarImg from "../images/avatar.webp";
 
 const Intro: Component = () => {
   return (
@@ -21,11 +22,7 @@ const Intro: Component = () => {
           <img class="Intro__avatar" src={avatarImg} alt="Owner avatar" />
         </div>
         <a class="Intro__down-link" href="#about-me">
-          <img
-            class="Intro__down-icon"
-            src={downIcon}
-            alt="Down pointing arrow"
-          />
+          <ArrowDownIcon />
         </a>
       </header>
     </>
