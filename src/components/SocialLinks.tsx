@@ -13,7 +13,9 @@ const SocialLinks: Component<ISocialLinksData> = (props: ISocialLinksData) => {
     <ul class="SocialLinks">
       <li class="SocialLinks__link">
         <a href={props.githubLink} target="_blank" rel="noreferrer">
-          <img class="SocialLinks__icon" src={githubIcon} alt="Github icon" />
+          {/* <img class="SocialLinks__icon" src={githubIcon} alt="Github icon" /> */}
+          {/* <object data={githubIcon} class="SocialLinks__icon" /> */}
+          <embed src={githubIcon} class="SocialLinks__icon" />
         </a>
       </li>
       <li class="SocialLinks__link">

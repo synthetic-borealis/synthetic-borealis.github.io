@@ -36,4 +36,18 @@ function applyDarkTheme(): void {
   applyTheme(darkThemeColours);
 }
 
-export { applyDarkTheme };
+function applyLightTheme(): void {
+  const darkThemeColours: IThemeColours = {
+    mainBackground: "#aaaabb",
+    menuBackground: "rgb(51, 51, 51, 0.5)", //
+    navBackground: "#111122", //
+    cardBackground: "#333344", //
+    footerBackground: "#222244", //
+    navBorder: "#adadde", //
+    text: "#ededfd", //
+    link: "#fdfdfd", //
+  };
+  applyTheme(darkThemeColours);
+}
+
+export { applyDarkTheme, applyLightTheme };
