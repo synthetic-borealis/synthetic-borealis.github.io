@@ -63,9 +63,6 @@ export const basicSkills: Array<ISkillData> = [
     name: "Solid.js",
     icon: solidIcon,
   },
-];
-
-export const currentlyLearningSkills: Array<ISkillData> = [
   {
     name: "TypeScript",
     icon: typescriptIcon,
@@ -74,8 +71,11 @@ export const currentlyLearningSkills: Array<ISkillData> = [
     name: "Sass",
     icon: sassIcon,
   },
+];
+
+export const currentlyLearningSkills: Array<ISkillData> = [
   {
     name: "Kotlin",
     icon: kotlinIcon
-  }
+  },
 ];
