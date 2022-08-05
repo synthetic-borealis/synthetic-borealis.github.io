@@ -3,36 +3,33 @@ import { Component } from "solid-js";
 import ISocialLinksData from "../interfaces/social-links-data";
 
 import "./SocialLinks.scss";
-import githubIcon from "../images/icons/icon-github.svg";
-import linkedinIcon from "../images/icons/icon-linkedin.svg";
-import twitterIcon from "../images/icons/icon-twitter.svg";
-import cvIcon from "../images/icons/icon-cv.svg";
+
+import GithubIcon from "./icons/social/GithubIcon";
+import LinkedinIcon from "./icons/social/LinkedinIcon";
+import TwitterIcon from "./icons/social/TwitterIcon";
+import ResumeIcon from "./icons/social/ResumeIcon";
 
 const SocialLinks: Component<ISocialLinksData> = (props: ISocialLinksData) => {
   return (
     <ul class="SocialLinks">
       <li class="SocialLinks__link">
         <a href={props.githubLink} target="_blank" rel="noreferrer">
-          <img class="SocialLinks__icon" src={githubIcon} alt="Github icon" />
+          <GithubIcon />
         </a>
       </li>
       <li class="SocialLinks__link">
         <a href={props.linkedinLink} target="_blank" rel="noreferrer">
-          <img
-            class="SocialLinks__icon"
-            src={linkedinIcon}
-            alt="LinkedIn icon"
-          />
+          <LinkedinIcon />
         </a>
       </li>
       <li class="SocialLinks__link">
         <a href={props.twitterLink} target="_blank" rel="noreferrer">
-          <img class="SocialLinks__icon" src={twitterIcon} alt="Twitter icon" />
+          <TwitterIcon />
         </a>
       </li>
       <li class="SocialLinks__link">
         <a href={props.resumeLink} target="_blank" rel="noreferrer">
-          <img class="SocialLinks__icon" src={cvIcon} alt="Resume icon" />
+          <ResumeIcon />
         </a>
       </li>
     </ul>

@@ -1,10 +1,13 @@
-import { Component, createSignal, onCleanup, onMount } from "solid-js";
+import { Component, createSignal, onCleanup, onMount, Show } from "solid-js";
 
 import MobileMenu from "./MobileMenu";
 import SocialLinks from "./SocialLinks";
 import ISocialLinksData from "../interfaces/social-links-data";
 
 import "./NavBar.scss";
+
+import OpenMenuIcon from "./icons/menu/OpenMenuIcon";
+import CloseMenuIcon from "./icons/menu/CloseMenuIcon";
 
 interface INavBarProps {
   socialLinks: ISocialLinksData;
@@ -65,14 +68,14 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
           {isMobileOrTablet() ? (
             <div class="NavBar__link-container">
               <button
-                class={
-                  isMenuOpen()
-                    ? "NavBar__menu-button NavBar__menu-button_close"
-                    : "NavBar__menu-button"
-                }
+                class="NavBar__menu-button"
                 onClick={handleMenuButtonClick}
                 aria-label={isMenuOpen() ? "Menu button" : "Close menu button"}
-              />
+              >
+                <Show when={isMenuOpen()} fallback={<OpenMenuIcon />}>
+                  <CloseMenuIcon />
+                </Show>
+              </button>
             </div>
           ) : (
             <>
