@@ -3,7 +3,7 @@ import "./SocialIcon.scss";
 
 const TwitterIcon: Component = () => {
   return (
-    <div aria-label="Twitter icon">
+    <div aria-label="Twitter icon" role="img">
       <svg
         width="256px"
         height="256px"

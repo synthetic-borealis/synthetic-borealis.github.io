@@ -3,7 +3,7 @@ import "./MenuIcon.scss";
 
 const CloseMenuIcon: Component = () => {
   return (
-    <div>
+    <div role="img" aria-label="Close icon">
       <svg
         version="1.1"
         id="Capa_1"

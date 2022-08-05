@@ -3,7 +3,7 @@ import "./ArrowDownIcon.scss";
 
 const ArrowDownIcon: Component = () => {
   return (
-    <div aria-label="Down pointing arrow">
+    <div aria-label="Down pointing arrow" role="img">
       <svg
         version="1.1"
         id="Capa_1"
@@ -17,7 +17,6 @@ const ArrowDownIcon: Component = () => {
         width="123.97px"
         height="123.97px"
         viewBox="0 0 123.97 123.97"
-        style="enable-background:new 0 0 123.97 123.97;"
         class="ArrowDownIcon"
       >
         <g>

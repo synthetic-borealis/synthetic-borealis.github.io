@@ -3,7 +3,7 @@ import "./SocialIcon.scss";
 
 const GithubIcon: Component = () => {
   return (
-    <div aria-label="GitHub icon">
+    <div aria-label="GitHub icon" role="img">
       <svg
         class="SocialIcon"
         width="256px"

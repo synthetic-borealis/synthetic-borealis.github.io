@@ -4,6 +4,9 @@ import SocialLinks from "./SocialLinks";
 import ISocialLinksData from "../interfaces/social-links-data";
 
 import "./MobileMenu.scss";
+
+import ArrowUpIcon from "./icons/ArrowUpIcon";
+
 import socialLinksData from "../utils/social-links";
 
 interface IMobileMenuProps {
@@ -32,7 +35,9 @@ const MobileMenu: Component<IMobileMenuProps> = (props: IMobileMenuProps) => {
         class="MobileMenu__arrows"
         onClick={closeMenu}
         aria-label="Another close menu button"
-      />
+      >
+        <ArrowUpIcon />
+      </button>
     </div>
   );
 };

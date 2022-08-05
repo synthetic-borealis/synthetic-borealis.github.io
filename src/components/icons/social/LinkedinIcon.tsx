@@ -3,7 +3,7 @@ import "./SocialIcon.scss";
 
 const LinkedinIcon: Component = () => {
   return (
-    <div aria-label="LinkedIn icon">
+    <div aria-label="LinkedIn icon" role="img">
       <svg
         version="1.1"
         id="Layer_1"
@@ -15,16 +15,21 @@ const LinkedinIcon: Component = () => {
         x="0px"
         y="0px"
         viewBox="0 0 455 455"
-        style="enable-background:new 0 0 455 455;"
         class="SocialIcon"
       >
         <g>
           <path
-            style="fill-rule:evenodd;clip-rule:evenodd;"
+            style={{
+              "fill-rule": "evenodd",
+              "clip-rule": "evenodd",
+            }}
             d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
           />
           <path
-            style="fill-rule:evenodd;clip-rule:evenodd;"
+            style={{
+              "fill-rule": "evenodd",
+              "clip-rule": "evenodd",
+            }}
             d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
 		 M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
 		c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345

@@ -3,7 +3,7 @@ import "./SocialIcon.scss";
 
 const ResumeIcon: Component = () => {
   return (
-    <div aria-label="Resume icon">
+    <div aria-label="Resume icon" role="img">
       <svg
         version="1.1"
         id="Capa_1"
@@ -17,7 +17,6 @@ const ResumeIcon: Component = () => {
         width="43.916px"
         height="43.916px"
         viewBox="0 0 43.916 43.916"
-        style="enable-background:new 0 0 43.916 43.916;"
         class="SocialIcon"
       >
         <g>

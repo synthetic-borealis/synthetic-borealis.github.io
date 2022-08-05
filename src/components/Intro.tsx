@@ -4,7 +4,6 @@ import { Portal } from "solid-js/web";
 import "./Intro.scss";
 
 import ArrowDownIcon from "./icons/ArrowDownIcon";
-import downIcon from "../images/icons/icon-downArrow.svg";
 import avatarImg from "../images/avatar.webp";
 
 const Intro: Component = () => {

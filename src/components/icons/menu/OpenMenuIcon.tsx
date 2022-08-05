@@ -3,7 +3,7 @@ import "./MenuIcon.scss";
 
 const OpenMenuIcon: Component = () => {
   return (
-    <div>
+    <div role="img" aria-label="Menu icon">
       <svg
         version="1.1"
         id="Capa_1"
@@ -17,7 +17,6 @@ const OpenMenuIcon: Component = () => {
         width="24.75px"
         height="24.75px"
         viewBox="0 0 24.75 24.75"
-        style="enable-background:new 0 0 24.75 24.75;"
         class="MenuIcon"
       >
         <g>
