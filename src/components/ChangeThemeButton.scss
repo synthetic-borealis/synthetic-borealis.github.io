@@ -1,0 +1,16 @@
+.ChangeThemeButton {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  margin-left: 24px;
+  transition: opacity 0.25s ease-in-out;
+  align-self: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
