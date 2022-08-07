@@ -6,18 +6,17 @@ import CSSIcon from "../components/icons/skills/CSSIcon";
 import ReactIcon from "../components/icons/skills/ReactIcon";
 import NodeJsIcon from "../components/icons/skills/NodeJsIcon";
 import MongoDBIcon from "../components/icons/skills/MongoDBIcon";
-// import expressjsIcon from "../images/logos/logo-expressjs.svg";
 import ExpressJsIcon from "../components/icons/skills/ExpressJsIcon";
 
 // Basic Skills
-import pythonIcon from "../images/logos/logo-python.svg";
+import PythonIcon from "../components/icons/skills/PythonIcon";
 import CPPIcon from "../components/icons/skills/CPPIcon";
-import csharpIcon from "../images/logos/logo-csharp.svg";
-
-// Learning Skills
+import CSharpIcon from "../components/icons/skills/CSharpIcon";
+import SolidJsIcon from "../components/icons/skills/SolidJsIcon";
 import typescriptIcon from "../images/logos/logo-typescript.svg";
 import sassIcon from "../images/logos/logo-sass.svg";
-import solidIcon from "../images/logos/logo-solidjs.svg";
+
+// Learning Skills
 import kotlinIcon from "../images/logos/logo-kotlin.svg";
 
 export const currentlyUsedSkills: Array<ISkillData> = [
@@ -48,22 +47,22 @@ export const currentlyUsedSkills: Array<ISkillData> = [
 ];
 
 export const basicSkills: Array<ISkillData> = [
-  // {
-  //   name: "Python",
-  //   icon: pythonIcon,
-  // },
+  {
+    name: "Python",
+    icon: PythonIcon,
+  },
   {
     name: "C++",
     icon: CPPIcon,
   },
-  // {
-  //   name: "C#",
-  //   icon: csharpIcon,
-  // },
-  // {
-  //   name: "Solid.js",
-  //   icon: solidIcon,
-  // },
+  {
+    name: "C#",
+    icon: CSharpIcon,
+  },
+  {
+    name: "Solid.js",
+    icon: SolidJsIcon,
+  },
   // {
   //   name: "TypeScript",
   //   icon: typescriptIcon,

@@ -12,7 +12,6 @@ const NodeJsIcon: Component = () => {
         height="1em"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 256 289"
-        // style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
         style={{
           "-ms-transform": "rotate(360deg)",
           "-webkit-transform": "rotate(360deg)",
