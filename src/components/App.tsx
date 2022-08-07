@@ -1,4 +1,4 @@
-import { Component, createEffect, For, onMount } from "solid-js";
+import { Component, createEffect, createSignal, For, onMount } from "solid-js";
 
 import NavBar from "./NavBar";
 import Intro from "./Intro";
@@ -24,27 +24,31 @@ import Theme from "../enums/theme";
 
 const App: Component = () => {
   const [settings, { setDarkTheme, setLightTheme }] = useSettings();
+  const [isMounted, setIsMounted] = createSignal<boolean>(false);
 
   createEffect(() => {
+    if (!isMounted()) {
+      return;
+    }
+
     if (settings().theme === Theme.Light) {
       applyLightTheme();
+      localStorage.setItem("theme", Theme[Theme.Light])
     } else {
       applyDarkTheme();
+      localStorage.setItem("theme", Theme[Theme.Dark]);
     }
   });
 
   onMount(() => {
+    setIsMounted(true);
     const storedTheme = localStorage.getItem("theme");
 
-    if (storedTheme !== null && Theme[storedTheme] === Theme.Light) {
+    if (storedTheme === Theme[Theme.Light]) {
       setLightTheme();
-      // applyLightTheme();
     } else {
       setDarkTheme();
-      // applyDarkTheme();
     }
-    // applyDarkTheme();
-    // applyLightTheme();
   });
 
   return (

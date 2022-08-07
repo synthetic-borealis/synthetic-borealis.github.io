@@ -8,6 +8,7 @@ import "./NavBar.scss";
 
 import OpenMenuIcon from "./icons/menu/OpenMenuIcon";
 import CloseMenuIcon from "./icons/menu/CloseMenuIcon";
+import ChangeThemeButton from "./ChangeThemeButton";
 
 interface INavBarProps {
   socialLinks: ISocialLinksData;
@@ -66,17 +67,20 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
       <nav class="NavBar">
         <div class="NavBar__container">
           {isMobileOrTablet() ? (
-            <div class="NavBar__link-container">
-              <button
-                class="NavBar__menu-button"
-                onClick={handleMenuButtonClick}
-                aria-label={isMenuOpen() ? "Menu button" : "Close menu button"}
-              >
-                <Show when={isMenuOpen()} fallback={<OpenMenuIcon />}>
-                  <CloseMenuIcon />
-                </Show>
-              </button>
-            </div>
+            <>
+              <div class="NavBar__link-container">
+                <button
+                  class="NavBar__menu-button"
+                  onClick={handleMenuButtonClick}
+                  aria-label={isMenuOpen() ? "Menu button" : "Close menu button"}
+                >
+                  <Show when={isMenuOpen()} fallback={<OpenMenuIcon />}>
+                    <CloseMenuIcon />
+                  </Show>
+                </button>
+              </div>
+              <ChangeThemeButton />
+            </>
           ) : (
             <>
               <ul class="NavBar__link-container">
@@ -101,7 +105,10 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
                   </a>
                 </li>
               </ul>
-              {SocialLinks(props.socialLinks)}
+              <div class="NavBar__right-container">
+                {SocialLinks(props.socialLinks)}
+                <ChangeThemeButton />
+              </div>
             </>
           )}
         </div>

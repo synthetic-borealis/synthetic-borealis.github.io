@@ -1,5 +1,4 @@
-import { Component, useContext } from "solid-js";
-// import SettingsContext from "../contexts/settings";
+import { Component } from "solid-js";
 import { useSettings } from "../contexts/settings";
 import ThemeIcon from "./icons/ThemeIcon";
 
@@ -9,9 +8,18 @@ import Theme from "../enums/theme";
 const ChangeThemeButton: Component = () => {
   const [settings, { setDarkTheme, setLightTheme }] = useSettings();
 
-  const themeSetter = settings().theme === Theme.Dark ? setLightTheme : setDarkTheme;
+  function changeTheme() {
+    const currentTheme: Theme = settings().theme;
+
+    if (Theme[currentTheme] === Theme[Theme.Light]) {
+      setDarkTheme();
+    } else {
+      setLightTheme();
+    }
+  }
+
   return (
-    <button class="ChangeThemeButton">
+    <button class="ChangeThemeButton" onClick={changeTheme}>
       <ThemeIcon />
     </button>
   );

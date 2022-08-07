@@ -35,11 +35,9 @@ export const SettingsProvider = (props: ISettingsProviderProps) => {
       state,
       {
         setDarkTheme() {
-          console.log("Setting dark theme");
           setState({ theme: Theme.Dark });
         },
         setLightTheme() {
-          console.log("Setting light theme");
           setState({ theme: Theme.Light });
         },
       },
