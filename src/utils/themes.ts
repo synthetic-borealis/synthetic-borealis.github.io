@@ -37,17 +37,17 @@ function applyDarkTheme(): void {
 }
 
 function applyLightTheme(): void {
-  const darkThemeColours: IThemeColours = {
-    mainBackground: "#aaaabb",
+  const lightThemeColours: IThemeColours = {
+    mainBackground: "#ddddee",
     menuBackground: "rgb(51, 51, 51, 0.5)", //
-    navBackground: "#111122", //
-    cardBackground: "#333344", //
-    footerBackground: "#222244", //
-    navBorder: "#adadde", //
-    text: "#ededfd", //
-    link: "#fdfdfd", //
+    navBackground: "#efeffc",
+    cardBackground: "#ccccfe", //
+    footerBackground: "#ccccff", //
+    navBorder: "#333366",
+    text: "#222232",
+    link: "#222222",
   };
-  applyTheme(darkThemeColours);
+  applyTheme(lightThemeColours);
 }
 
 export { applyDarkTheme, applyLightTheme };
