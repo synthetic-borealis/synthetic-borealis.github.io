@@ -83,32 +83,32 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
             </>
           ) : (
             <>
-              <ul class="NavBar__link-container">
-                <li class="NavBar__link-wrapper">
-                  <a href="#" class="NavBar__link">
-                    Home
-                  </a>
-                </li>
-                <li class="NavBar__link-wrapper">
-                  <a href="#about-me" class="NavBar__link">
-                    About Me
-                  </a>
-                </li>
-                <li class="NavBar__link-wrapper">
-                  <a href="#projects" class="NavBar__link">
-                    Projects
-                  </a>
-                </li>
-                <li class="NavBar__link-wrapper">
-                  <a href="#skills" class="NavBar__link">
-                    Skills
-                  </a>
-                </li>
-              </ul>
-              <div class="NavBar__right-container">
-                {SocialLinks(props.socialLinks)}
+              <div class="NavBar__left-container">
                 <ChangeThemeButton />
+                <ul class="NavBar__link-container">
+                  <li class="NavBar__link-wrapper">
+                    <a href="#" class="NavBar__link">
+                      Home
+                    </a>
+                  </li>
+                  <li class="NavBar__link-wrapper">
+                    <a href="#about-me" class="NavBar__link">
+                      About Me
+                    </a>
+                  </li>
+                  <li class="NavBar__link-wrapper">
+                    <a href="#projects" class="NavBar__link">
+                      Projects
+                    </a>
+                  </li>
+                  <li class="NavBar__link-wrapper">
+                    <a href="#skills" class="NavBar__link">
+                      Skills
+                    </a>
+                  </li>
+                </ul>
               </div>
+              {SocialLinks(props.socialLinks)}
             </>
           )}
         </div>

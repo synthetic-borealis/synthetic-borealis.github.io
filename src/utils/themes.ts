@@ -7,6 +7,7 @@ interface IThemeColours {
   navBorder: string;
   text: string;
   link: string;
+  themeButton: string;
 }
 
 function applyTheme(theme: IThemeColours): void {
@@ -20,6 +21,7 @@ function applyTheme(theme: IThemeColours): void {
   root.style.setProperty("--nav-border-colour", theme.navBorder);
   root.style.setProperty("--text-colour", theme.text);
   root.style.setProperty("--link-colour", theme.link);
+  root.style.setProperty("--theme-button-colour", theme.themeButton);
 }
 
 function applyDarkTheme(): void {
@@ -32,6 +34,7 @@ function applyDarkTheme(): void {
     navBorder: "#adadde",
     text: "#ededfd",
     link: "#fdfdfd",
+    themeButton: "#aaaaff",
   };
   applyTheme(darkThemeColours);
 }
@@ -39,13 +42,14 @@ function applyDarkTheme(): void {
 function applyLightTheme(): void {
   const lightThemeColours: IThemeColours = {
     mainBackground: "#ddddee",
-    menuBackground: "rgb(51, 51, 51, 0.5)", //
+    menuBackground: "rgb(200, 200, 200, 0.5)",
     navBackground: "#efeffc",
-    cardBackground: "#ccccfe", //
-    footerBackground: "#ccccff", //
+    cardBackground: "#ccccfe",
+    footerBackground: "#ccccff",
     navBorder: "#333366",
     text: "#222232",
     link: "#222222",
+    themeButton: "#2222cc",
   };
   applyTheme(lightThemeColours);
 }

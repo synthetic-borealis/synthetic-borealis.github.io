@@ -1,14 +1,19 @@
 .ChangeThemeButton {
+  position: relative;
   display: block;
   width: 32px;
   height: 32px;
   padding: 0;
   background-color: transparent;
   border: 0;
-  margin-left: 32px;
+  margin-right: 32px;
   transition: opacity 0.25s ease-in-out;
   align-self: center;
   cursor: pointer;
+
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
 
   &:hover {
     opacity: 0.6;
