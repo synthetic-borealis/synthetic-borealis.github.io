@@ -6,9 +6,9 @@
   left: 0;
   width: 100%;
   margin: 0 auto;
-  background-color: vars.$navbgcolour;
+  background-color: vars.$nav-background-colour;
   box-sizing: border-box;
-  border-bottom: 1px solid vars.$navbordercolour;
+  border-bottom: 1px solid vars.$nav-border-colour;
   max-height: 64px;
 
   @media (max-width: 1024px) {
@@ -83,7 +83,7 @@
     font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 700;
-    color: vars.$linkcolour;
+    color: vars.$link-colour;
 
     @media (max-width: 1024px) {
       font-size: 3rem;

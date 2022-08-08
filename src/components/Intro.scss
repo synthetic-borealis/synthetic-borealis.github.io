@@ -15,7 +15,7 @@
     height: 100%;
     content: "";
     opacity: 0.8;
-    background-color: vars.$bgcolour;
+    background-color: vars.$background-colour;
   }
 
   &__container {
@@ -47,7 +47,6 @@
     line-height: 1.25;
     letter-spacing: 0.025em;
     margin: 0 0 16px;
-    color: vars.$textcolour;
 
     @media (max-width: 1024px) {
       text-align: center;

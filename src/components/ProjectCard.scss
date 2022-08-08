@@ -5,9 +5,11 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-color: vars.$cardbgcolour;
+  background-color: vars.$card-background-colour;
   border-radius: 0.25rem;
   overflow: hidden;
+  -webkit-box-shadow: 0px 0px 0px 1px vars.$card-shaodw-colour;
+  box-shadow: 0px 0px 0px 1px vars.$card-shaodw-colour;
 
   &__thumbnail {
     margin: 0 0 8px;
@@ -20,7 +22,6 @@
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 0.025em;
-    color: vars.$textcolour;
     width: calc(100% - 32px);
     margin: 0 auto 8px;
   }
@@ -36,7 +37,6 @@
     min-height: calc(4 * 1.5em);
     width: calc(100% - 32px);
     margin: 0 auto 32px;
-    color: vars.$textcolour;
     overflow: hidden;
   }
 
@@ -61,7 +61,7 @@
     line-height: 1.5;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: vars.$linkcolour;
+    color: vars.$link-colour;
     transition: opacity 0.25s ease-in-out;
 
     &:hover {
