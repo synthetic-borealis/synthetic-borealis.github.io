@@ -1,7 +1,9 @@
+@use "../../../variables.scss" as vars;
+
 .SkillIcon {
   display: block;
   width: 64px;
   height: 64px;
   margin: 18px 18px 16px;
-  fill: var(--text-colour);
+  fill: vars.$textcolour;
 }
