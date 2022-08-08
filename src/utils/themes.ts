@@ -7,6 +7,7 @@ interface IThemeColours {
   navBorder: string;
   text: string;
   link: string;
+  themeButton: string;
 }
 
 function applyTheme(theme: IThemeColours): void {
@@ -20,6 +21,7 @@ function applyTheme(theme: IThemeColours): void {
   root.style.setProperty("--nav-border-colour", theme.navBorder);
   root.style.setProperty("--text-colour", theme.text);
   root.style.setProperty("--link-colour", theme.link);
+  root.style.setProperty("--theme-button-colour", theme.themeButton);
 }
 
 function applyDarkTheme(): void {
@@ -32,22 +34,24 @@ function applyDarkTheme(): void {
     navBorder: "#adadde",
     text: "#ededfd",
     link: "#fdfdfd",
+    themeButton: "#aaaaff",
   };
   applyTheme(darkThemeColours);
 }
 
 function applyLightTheme(): void {
-  const darkThemeColours: IThemeColours = {
-    mainBackground: "#aaaabb",
-    menuBackground: "rgb(51, 51, 51, 0.5)", //
-    navBackground: "#111122", //
-    cardBackground: "#333344", //
-    footerBackground: "#222244", //
-    navBorder: "#adadde", //
-    text: "#ededfd", //
-    link: "#fdfdfd", //
+  const lightThemeColours: IThemeColours = {
+    mainBackground: "#ddddee",
+    menuBackground: "rgb(200, 200, 200, 0.5)",
+    navBackground: "#efeffc",
+    cardBackground: "#ccccfe",
+    footerBackground: "#ccccff",
+    navBorder: "#333366",
+    text: "#222232",
+    link: "#222222",
+    themeButton: "#2222cc",
   };
-  applyTheme(darkThemeColours);
+  applyTheme(lightThemeColours);
 }
 
 export { applyDarkTheme, applyLightTheme };

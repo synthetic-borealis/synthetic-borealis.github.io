@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   background-color: vars.$cardbgcolour;
+  border-radius: 0.25rem;
+  overflow: hidden;
 
   &__thumbnail {
     margin: 0 0 8px;

@@ -1,4 +1,4 @@
-import { Component, For, onMount } from "solid-js";
+import { Component, createEffect, createSignal, For, onMount } from "solid-js";
 
 import NavBar from "./NavBar";
 import Intro from "./Intro";
@@ -10,7 +10,8 @@ import SkillsList from "./SkillsList";
 import SkillCard from "./SkillCard";
 import Footer from "./Footer";
 
-import { applyDarkTheme } from "../utils/themes";
+import { useSettings } from "../contexts/settings";
+import { applyDarkTheme, applyLightTheme } from "../utils/themes";
 
 import socialLinksData from "../utils/social-links";
 import projectsList from "../utils/projects-list";
@@ -19,10 +20,35 @@ import {
   basicSkills,
   currentlyLearningSkills,
 } from "../utils/skill-lists";
+import Theme from "../enums/theme";
 
 const App: Component = () => {
+  const [settings, { setDarkTheme, setLightTheme }] = useSettings();
+  const [isMounted, setIsMounted] = createSignal<boolean>(false);
+
+  createEffect(() => {
+    if (!isMounted()) {
+      return;
+    }
+
+    if (settings().theme === Theme.Light) {
+      applyLightTheme();
+      localStorage.setItem("theme", Theme[Theme.Light])
+    } else {
+      applyDarkTheme();
+      localStorage.setItem("theme", Theme[Theme.Dark]);
+    }
+  });
+
   onMount(() => {
-    applyDarkTheme();
+    setIsMounted(true);
+    const storedTheme = localStorage.getItem("theme");
+
+    if (storedTheme === Theme[Theme.Light]) {
+      setLightTheme();
+    } else {
+      setDarkTheme();
+    }
   });
 
   return (
