@@ -6,4 +6,5 @@
   height: 64px;
   margin: 18px 18px 16px;
   fill: vars.$text-colour;
+  filter: drop-shadow(0 0 0.15rem vars.$icon-shadow-colour);
 }

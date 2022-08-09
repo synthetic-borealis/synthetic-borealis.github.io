@@ -9,6 +9,7 @@ interface IThemeColours {
   link: string;
   themeButton: string;
   cardShadow: string;
+  iconShadow: string;
 }
 
 function applyTheme(theme: IThemeColours): void {
@@ -24,6 +25,7 @@ function applyTheme(theme: IThemeColours): void {
   root.style.setProperty("--link-colour", theme.link);
   root.style.setProperty("--theme-button-colour", theme.themeButton);
   root.style.setProperty("--card-shadow-colour", theme.cardShadow);
+  root.style.setProperty("--icon-shadow-colour", theme.iconShadow);
 }
 
 function applyDarkTheme(): void {
@@ -38,6 +40,7 @@ function applyDarkTheme(): void {
     link: "#fdfdfd",
     themeButton: "#aaaaff",
     cardShadow: "rgba(0, 0, 0, 0.1)",
+    iconShadow: "transparent"
   };
   applyTheme(darkThemeColours);
 }
@@ -54,6 +57,7 @@ function applyLightTheme(): void {
     link: "#222222",
     themeButton: "#2222cc",
     cardShadow: "rgba(0, 0, 0, 0.1)",
+    iconShadow: "rgba(0, 0, 0, 0.2)"
   };
   applyTheme(lightThemeColours);
 }
