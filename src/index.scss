@@ -1,4 +1,4 @@
-@use "./variables.scss" as vars;
+@import "./variables";
 
 * {
   box-sizing: border-box;
@@ -14,6 +14,6 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: vars.$background-colour;
-  color: vars.$text-colour;
+  background-color: $background-colour;
+  color: $text-colour;
 }

@@ -1,7 +1,7 @@
-@use "../variables.scss" as vars;
+@import "../variables";
 
 .Footer {
-  background-color: vars.$footer-background-colour;
+  background-color: $footer-background-colour;
   padding: 31px 0;
 
   @media (max-width: 670px) {

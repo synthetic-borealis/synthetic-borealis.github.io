@@ -1,15 +1,15 @@
-@use "../variables.scss" as vars;
+@import "../variables";
+@import "../mixins";
 
 .ProjectCard {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-color: vars.$card-background-colour;
+  background-color: $card-background-colour;
   border-radius: 0.25rem;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 0px 1px vars.$card-shaodw-colour;
-  box-shadow: 0px 0px 0px 1px vars.$card-shaodw-colour;
+  @include card-box-shadow;
 
   &__thumbnail {
     margin: 0 0 8px;
@@ -61,7 +61,7 @@
     line-height: 1.5;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: vars.$link-colour;
+    color: $link-colour;
     transition: opacity 0.25s ease-in-out;
 
     &:hover {

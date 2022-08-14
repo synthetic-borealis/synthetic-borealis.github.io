@@ -1,4 +1,4 @@
-@use "../variables.scss" as vars;
+@import "../variables";
 
 .Intro {
   position: relative;
@@ -15,7 +15,7 @@
     height: 100%;
     content: "";
     opacity: 0.8;
-    background-color: vars.$background-colour;
+    background-color: $background-colour;
   }
 
   &__container {
