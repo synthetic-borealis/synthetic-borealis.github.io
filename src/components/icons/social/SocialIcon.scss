@@ -1,11 +1,11 @@
-@use "../../../variables.scss" as vars;
+@import "../../../variables";
 
 .SocialIcon {
   width: 32px;
   height: 32px;
   margin: 0;
   padding: 0;
-  fill: vars.$link-colour;
+  fill: $link-colour;
 
   @media (max-width: 1024px) {
     width: 64px;

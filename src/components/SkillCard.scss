@@ -1,4 +1,5 @@
-@use "../variables.scss" as vars;
+@import "../variables";
+@import "../mixins";
 
 .SkillCard {
   position: relative;
@@ -7,12 +8,10 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  background-color: vars.$card-background-colour;
+  background-color: $card-background-colour;
   border-radius: 20px;
   width: 100px;
-
-  -webkit-box-shadow: 0px 0px 0px 1px vars.$card-shaodw-colour;
-  box-shadow: 0px 0px 0px 1px vars.$card-shaodw-colour;
+  @include card-box-shadow;
 
   &__icon {
     width: 64px;

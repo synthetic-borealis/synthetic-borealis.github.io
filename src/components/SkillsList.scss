@@ -1,4 +1,4 @@
-@use "../variables.scss" as vars;
+@import "../variables";
 
 .SkillsList {
   width: calc(760 / 1120 * 100%);
