@@ -6,4 +6,11 @@ import "./index.scss";
 import App from "./components/App";
 import { SettingsProvider } from "./contexts/settings";
 
-render(() => <SettingsProvider><App /></SettingsProvider>, document.getElementById("root") as HTMLElement);
+render(
+  () => (
+    <SettingsProvider>
+      <App />
+    </SettingsProvider>
+  ),
+  document.getElementById("root") as HTMLElement,
+);

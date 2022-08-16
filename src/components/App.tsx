@@ -33,7 +33,7 @@ const App: Component = () => {
 
     if (settings().theme === Theme.Light) {
       applyLightTheme();
-      localStorage.setItem("theme", Theme[Theme.Light])
+      localStorage.setItem("theme", Theme[Theme.Light]);
     } else {
       applyDarkTheme();
       localStorage.setItem("theme", Theme[Theme.Dark]);
@@ -57,9 +57,7 @@ const App: Component = () => {
       <Intro />
       <AboutMe />
       <Projects>
-        <For each={projectsList}>
-          {(project) => <li>{ProjectCard(project)}</li>}
-        </For>
+        <For each={projectsList}>{(project) => <li>{ProjectCard(project)}</li>}</For>
       </Projects>
       <Skills>
         <SkillsList caption="Currently Using">
@@ -69,9 +67,7 @@ const App: Component = () => {
           <For each={basicSkills}>{(skill) => SkillCard(skill)}</For>
         </SkillsList>
         <SkillsList caption="Currently Learning">
-          <For each={currentlyLearningSkills}>
-            {(skill) => SkillCard(skill)}
-          </For>
+          <For each={currentlyLearningSkills}>{(skill) => SkillCard(skill)}</For>
         </SkillsList>
       </Skills>
       <Footer />

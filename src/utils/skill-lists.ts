@@ -76,6 +76,6 @@ export const basicSkills: Array<ISkillData> = [
 export const currentlyLearningSkills: Array<ISkillData> = [
   {
     name: "Kotlin",
-    icon: KotlinIcon
+    icon: KotlinIcon,
   },
 ];

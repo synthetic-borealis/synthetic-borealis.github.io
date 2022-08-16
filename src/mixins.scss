@@ -1,6 +1,4 @@
-@import "./variables";
-
-@mixin card-box-shadow {
-  -webkit-box-shadow: 0px 0px 0px 1px $card-shaodw-colour;
-  box-shadow: 0px 0px 0px 1px $card-shaodw-colour;
+@mixin card-box-shadow($colour) {
+  -webkit-box-shadow: 0px 0px 0px 1px $colour;
+  box-shadow: 0px 0px 0px 1px $colour;
 }

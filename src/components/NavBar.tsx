@@ -17,7 +17,7 @@ interface INavBarProps {
 const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
   const mobileWidthThreshold = 1024;
   const [isMobileOrTablet, setIsMobileOrTablet] = createSignal<boolean>(
-    window.innerWidth <= mobileWidthThreshold
+    window.innerWidth <= mobileWidthThreshold,
   );
   const [isMenuOpen, setIsMenuOpen] = createSignal<boolean>(false);
   const [isMenuVisible, setIsMenuVisible] = createSignal<boolean>(false);

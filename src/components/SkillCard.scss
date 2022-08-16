@@ -11,7 +11,7 @@
   background-color: $card-background-colour;
   border-radius: 20px;
   width: 100px;
-  @include card-box-shadow;
+  @include card-box-shadow($card-shadow-colour);
 
   &__icon {
     width: 64px;

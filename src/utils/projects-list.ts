@@ -21,7 +21,8 @@ const projectsList: Array<IProjectCardData> = [
   {
     name: "Hirnfick",
     thumbnail: npmLogo,
-    description: "A Brainfuck source-to-source compiler & library that can be embedded in websites and Node.js apps. It can be downloaded from Github and via NPM.",
+    description:
+      "A Brainfuck source-to-source compiler & library that can be embedded in websites and Node.js apps. It can be downloaded from Github and via NPM.",
     repoUrl: "https://github.com/synthetic-borealis/hirnfick.js",
   },
 ];

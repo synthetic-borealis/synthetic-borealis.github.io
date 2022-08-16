@@ -40,7 +40,7 @@ function applyDarkTheme(): void {
     link: "#fdfdfd",
     themeButton: "#aaaaff",
     cardShadow: "rgba(0, 0, 0, 0.1)",
-    iconShadow: "transparent"
+    iconShadow: "transparent",
   };
   applyTheme(darkThemeColours);
 }
@@ -57,7 +57,7 @@ function applyLightTheme(): void {
     link: "#222222",
     themeButton: "#2222cc",
     cardShadow: "rgba(0, 0, 0, 0.1)",
-    iconShadow: "rgba(0, 0, 0, 0.2)"
+    iconShadow: "rgba(0, 0, 0, 0.2)",
   };
   applyTheme(lightThemeColours);
 }

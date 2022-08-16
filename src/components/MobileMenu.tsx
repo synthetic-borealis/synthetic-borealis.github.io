@@ -24,11 +24,7 @@ const MobileMenu: Component<IMobileMenuProps> = (props: IMobileMenuProps) => {
   }
 
   return (
-    <div
-      class={
-        props.isMenuVisible ? "MobileMenu MobileMenu_visible" : "MobileMenu"
-      }
-    >
+    <div class={props.isMenuVisible ? "MobileMenu MobileMenu_visible" : "MobileMenu"}>
       <ul class="MobileMenu__link-container">{children()}</ul>
       {SocialLinks(socialLinksData)}
       <button
