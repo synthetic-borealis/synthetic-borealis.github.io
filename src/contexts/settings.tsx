@@ -1,10 +1,4 @@
-import {
-  createContext,
-  JSXElement,
-  createSignal,
-  useContext,
-  Accessor,
-} from "solid-js";
+import { createContext, JSXElement, createSignal, useContext, Accessor } from "solid-js";
 import Theme from "../enums/theme";
 
 import ISettings from "../interfaces/settings";
@@ -19,7 +13,7 @@ const SettingsContext = createContext<
     {
       setDarkTheme(): void;
       setLightTheme(): void;
-    }
+    },
   ]
 >();
 
@@ -30,7 +24,7 @@ export const SettingsProvider = (props: ISettingsProviderProps) => {
       {
         setDarkTheme(): void;
         setLightTheme(): void;
-      }
+      },
     ] = [
       state,
       {
@@ -44,9 +38,7 @@ export const SettingsProvider = (props: ISettingsProviderProps) => {
     ];
 
   return (
-    <SettingsContext.Provider value={settings}>
-      {props.children}
-    </SettingsContext.Provider>
+    <SettingsContext.Provider value={settings}>{props.children}</SettingsContext.Provider>
   );
 };
 

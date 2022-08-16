@@ -9,7 +9,7 @@
   background-color: $card-background-colour;
   border-radius: 0.25rem;
   overflow: hidden;
-  @include card-box-shadow;
+  @include card-box-shadow($card-shadow-colour);
 
   &__thumbnail {
     margin: 0 0 8px;

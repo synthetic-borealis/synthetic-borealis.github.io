@@ -4,11 +4,7 @@ import "./SkillIcon.scss";
 const SolidJsIcon: Component = () => {
   return (
     <div role="img" aria-label="Solid.js logo">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 166 155.3"
-        class="SkillIcon"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 155.3" class="SkillIcon">
         <defs>
           <linearGradient
             id="a"
