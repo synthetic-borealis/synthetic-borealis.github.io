@@ -3,6 +3,10 @@
   display: block;
   width: 32px;
   height: 32px;
+  @media (max-width: 1024px) and (min-width: 671px) {
+    width: 48px;
+    height: 48px;
+  }
   padding: 0;
   background-color: transparent;
   border: 0;
