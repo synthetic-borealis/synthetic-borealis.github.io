@@ -1,7 +1,7 @@
-import { Component, Show } from "solid-js";
-import IProjectCardData from "../interfaces/project-card-data";
+import { Component, Show } from 'solid-js';
+import IProjectCardData from '../interfaces/project-card-data';
 
-import "./ProjectCard.scss";
+import './ProjectCard.scss';
 
 const ProjectCard: Component<IProjectCardData> = (data: IProjectCardData) => {
   return (
@@ -14,7 +14,7 @@ const ProjectCard: Component<IProjectCardData> = (data: IProjectCardData) => {
       <h2 class="ProjectCard__caption">{data.name}</h2>
       <p class="ProjectCard__description">{data.description}</p>
       <ul class="ProjectCard__link-container">
-        <Show when={data.liveUrl}>
+        <Show when={data.liveUrl} keyed>
           <li class="ProjectCard__link-wrapper">
             <a
               class="ProjectCard__link"
@@ -26,7 +26,7 @@ const ProjectCard: Component<IProjectCardData> = (data: IProjectCardData) => {
             </a>
           </li>
         </Show>
-        <Show when={data.repoUrl}>
+        <Show when={data.repoUrl} keyed>
           <li class="ProjectCard__link-wrapper">
             <a
               class="ProjectCard__link"

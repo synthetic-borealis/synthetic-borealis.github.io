@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
-import "./SkillIcon.scss";
+import { Component } from 'solid-js';
+import './SkillIcon.scss';
 
 const SolidJsIcon: Component = () => {
   return (
@@ -14,9 +14,9 @@ const SolidJsIcon: Component = () => {
             x2="152"
             y2="63.5"
           >
-            <stop offset=".1" stop-color="#76b3e1" />
-            <stop offset=".3" stop-color="#dcf2fd" />
-            <stop offset="1" stop-color="#76b3e1" />
+            <stop offset=".1" stop-color="#76b3e1"/>
+            <stop offset=".3" stop-color="#dcf2fd"/>
+            <stop offset="1" stop-color="#76b3e1"/>
           </linearGradient>
           <linearGradient
             id="b"
@@ -26,9 +26,9 @@ const SolidJsIcon: Component = () => {
             x2="74"
             y2="105.2"
           >
-            <stop offset="0" stop-color="#76b3e1" />
-            <stop offset=".5" stop-color="#4377bb" />
-            <stop offset="1" stop-color="#1f3b77" />
+            <stop offset="0" stop-color="#76b3e1"/>
+            <stop offset=".5" stop-color="#4377bb"/>
+            <stop offset="1" stop-color="#1f3b77"/>
           </linearGradient>
           <linearGradient
             id="c"
@@ -38,9 +38,9 @@ const SolidJsIcon: Component = () => {
             x2="144.3"
             y2="149.8"
           >
-            <stop offset="0" stop-color="#315aa9" />
-            <stop offset=".5" stop-color="#518ac8" />
-            <stop offset="1" stop-color="#315aa9" />
+            <stop offset="0" stop-color="#315aa9"/>
+            <stop offset=".5" stop-color="#518ac8"/>
+            <stop offset="1" stop-color="#315aa9"/>
           </linearGradient>
           <linearGradient
             id="d"
@@ -50,9 +50,9 @@ const SolidJsIcon: Component = () => {
             x2="24.4"
             y2="260.8"
           >
-            <stop offset="0" stop-color="#4377bb" />
-            <stop offset=".5" stop-color="#1a336b" />
-            <stop offset="1" stop-color="#1a336b" />
+            <stop offset="0" stop-color="#4377bb"/>
+            <stop offset=".5" stop-color="#1a336b"/>
+            <stop offset="1" stop-color="#1a336b"/>
           </linearGradient>
         </defs>
         <path

@@ -1,6 +1,6 @@
-import { Component, children as Children, JSXElement } from "solid-js";
+import { Component, children as Children, JSXElement } from 'solid-js';
 
-import "./Projects.scss";
+import './Projects.scss';
 
 interface IProjectsProps {
   children: JSXElement;

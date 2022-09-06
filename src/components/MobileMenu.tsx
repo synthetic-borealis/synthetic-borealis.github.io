@@ -1,17 +1,17 @@
-import { Component, JSXElement, children as Children } from "solid-js";
-import SocialLinks from "./SocialLinks";
+import { Component, JSXElement, children as Children } from 'solid-js';
+import SocialLinks from './SocialLinks';
 
-import ISocialLinksData from "../interfaces/social-links-data";
+import ISocialLinksData from '../interfaces/social-links-data';
 
-import "./MobileMenu.scss";
-
-import ArrowUpIcon from "./icons/ArrowUpIcon";
-
-import socialLinksData from "../utils/social-links";
+import './MobileMenu.scss';
+import ArrowUpIcon from './icons/ArrowUpIcon';
+import socialLinksData from '../utils/social-links';
 
 interface IMobileMenuProps {
   isMenuVisible: boolean;
+
   closeMenuFunc(): void;
+
   socialLinks: ISocialLinksData;
   children: JSXElement;
 }
@@ -24,7 +24,7 @@ const MobileMenu: Component<IMobileMenuProps> = (props: IMobileMenuProps) => {
   }
 
   return (
-    <div class={props.isMenuVisible ? "MobileMenu MobileMenu_visible" : "MobileMenu"}>
+    <div class={props.isMenuVisible ? 'MobileMenu MobileMenu_visible' : 'MobileMenu'}>
       <ul class="MobileMenu__link-container">{children()}</ul>
       {SocialLinks(socialLinksData)}
       <button
@@ -32,7 +32,7 @@ const MobileMenu: Component<IMobileMenuProps> = (props: IMobileMenuProps) => {
         onClick={closeMenu}
         aria-label="Another close menu button"
       >
-        <ArrowUpIcon />
+        <ArrowUpIcon/>
       </button>
     </div>
   );

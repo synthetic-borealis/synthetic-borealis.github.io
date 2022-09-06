@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
-import "./SkillIcon.scss";
+import { Component } from 'solid-js';
+import './SkillIcon.scss';
 
 const PythonIcon: Component = () => {
   return (
@@ -7,12 +7,12 @@ const PythonIcon: Component = () => {
       <svg
         version="1.1"
         {...{
-          "xmlns:dc": "http://purl.org/dc/elements/1.1/",
-          "xmlns:cc": "http://web.resource.org/cc/",
-          "xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-          "xmlns:svg": "http://www.w3.org/2000/svg",
-          xmlns: "http://www.w3.org/2000/svg",
-          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          'xmlns:dc': 'http://purl.org/dc/elements/1.1/',
+          'xmlns:cc': 'http://web.resource.org/cc/',
+          'xmlns:rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+          'xmlns:svg': 'http://www.w3.org/2000/svg',
+          xmlns: 'http://www.w3.org/2000/svg',
+          'xmlns:xlink': 'http://www.w3.org/1999/xlink',
         }}
         x="0px"
         y="0px"
@@ -20,7 +20,7 @@ const PythonIcon: Component = () => {
         height="110px"
         viewBox="0.21 -0.077 110 110"
         enable-background="new 0.21 -0.077 110 110"
-        {...{ "xml:space": "preserve" }}
+        {...{ 'xml:space': 'preserve' }}
         class="SkillIcon"
       >
         <linearGradient
@@ -32,9 +32,10 @@ const PythonIcon: Component = () => {
           y2="1.8225"
           gradientTransform="matrix(1 0 0 -1 -53.2974 66.4321)"
         >
-          {" "}
-          <stop offset="0" style={{ "stop-color": "#387EB8" }} />{" "}
-          <stop offset="1" style={{ "stop-color": "#366994" }} />
+          {' '}
+          <stop offset="0" style={{ 'stop-color': '#387EB8' }}/>
+          {' '}
+          <stop offset="1" style={{ 'stop-color': '#366994' }}/>
         </linearGradient>
         <path
           fill="url(#SVGID_1_)"
@@ -49,9 +50,10 @@ const PythonIcon: Component = () => {
           y2="-34.5308"
           gradientTransform="matrix(1 0 0 -1 -53.2974 66.4321)"
         >
-          {" "}
-          <stop offset="0" style={{ "stop-color": "#FFE052" }} />{" "}
-          <stop offset="1" style={{ "stop-color": "#FFC331" }} />
+          {' '}
+          <stop offset="0" style={{ 'stop-color': '#FFE052' }}/>
+          {' '}
+          <stop offset="1" style={{ 'stop-color': '#FFC331' }}/>
         </linearGradient>
         <path
           fill="url(#SVGID_2_)"

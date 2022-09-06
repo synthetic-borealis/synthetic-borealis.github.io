@@ -1,21 +1,19 @@
-import { createContext, JSXElement, createSignal, useContext, Accessor } from "solid-js";
-import Theme from "../enums/theme";
+import { createContext, JSXElement, createSignal, useContext, Accessor } from 'solid-js';
+import Theme from '../enums/theme';
 
-import ISettings from "../interfaces/settings";
+import ISettings from '../interfaces/settings';
 
 interface ISettingsProviderProps {
   children?: JSXElement;
 }
 
-const SettingsContext = createContext<
-  [
-    Accessor<ISettings>,
-    {
-      setDarkTheme(): void;
-      setLightTheme(): void;
-    },
-  ]
->();
+const SettingsContext = createContext<[
+  Accessor<ISettings>,
+  {
+    setDarkTheme(): void;
+    setLightTheme(): void;
+  },
+]>();
 
 export const SettingsProvider = (props: ISettingsProviderProps) => {
   const [state, setState] = createSignal<ISettings>({ theme: Theme.Dark }),
@@ -45,5 +43,3 @@ export const SettingsProvider = (props: ISettingsProviderProps) => {
 export function useSettings() {
   return useContext(SettingsContext);
 }
-
-// export default SettingsProvider;
