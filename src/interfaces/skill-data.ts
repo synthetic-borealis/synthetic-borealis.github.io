@@ -1,4 +1,4 @@
-import { Component } from "solid-js";
+import { Component } from 'solid-js';
 
 export default interface ISkillData {
   name: string;

@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
-import "./ThemeIcon.scss";
+import { Component } from 'solid-js';
+import './ThemeIcon.scss';
 
 const ThemeIcon: Component = () => {
   return (

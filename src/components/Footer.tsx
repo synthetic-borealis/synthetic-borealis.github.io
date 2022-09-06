@@ -1,6 +1,6 @@
-import { Component } from "solid-js";
+import { Component } from 'solid-js';
 
-import "./Footer.scss";
+import './Footer.scss';
 
 const Footer: Component = () => {
   return (

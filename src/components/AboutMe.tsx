@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
-import "./AboutMe.scss";
+import { Component } from 'solid-js';
+import './AboutMe.scss';
 
 const AboutMe: Component = () => {
   return (

@@ -1,12 +1,12 @@
-import { Component } from "solid-js";
-import ISkillData from "../interfaces/skill-data";
+import { Component } from 'solid-js';
+import ISkillData from '../interfaces/skill-data';
 
-import "./SkillCard.scss";
+import './SkillCard.scss';
 
 const SkillCard: Component<ISkillData> = (props: ISkillData) => {
   return (
     <li class="SkillCard">
-      <props.icon />
+      <props.icon/>
       <p class="SkillCard__caption">{props.name}</p>
     </li>
   );

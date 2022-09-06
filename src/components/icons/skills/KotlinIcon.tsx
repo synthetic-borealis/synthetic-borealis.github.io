@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
-import "./SkillIcon.scss";
+import { Component } from 'solid-js';
+import './SkillIcon.scss';
 
 const KotlinIcon: Component = () => {
   return (
@@ -10,7 +10,7 @@ const KotlinIcon: Component = () => {
         viewBox="0 0 256 256"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        {...{ "xmlns:xlink": "http://www.w3.org/1999/xlink" }}
+        {...{ 'xmlns:xlink': 'http://www.w3.org/1999/xlink' }}
         preserveAspectRatio="xMidYMid"
         class="SkillIcon"
       >
@@ -23,9 +23,9 @@ const KotlinIcon: Component = () => {
             y2="100.010253%"
             id="linearGradient-1"
           >
-            <stop stop-color="#E44857" offset="0.3435144%"></stop>
-            <stop stop-color="#C711E1" offset="46.89%"></stop>
-            <stop stop-color="#7F52FF" offset="100%"></stop>
+            <stop stop-color="#E44857" offset="0.3435144%"/>
+            <stop stop-color="#C711E1" offset="46.89%"/>
+            <stop stop-color="#7F52FF" offset="100%"/>
           </linearGradient>
         </defs>
         <g>
@@ -33,7 +33,7 @@ const KotlinIcon: Component = () => {
             fill="url(#linearGradient-1)"
             fill-rule="nonzero"
             points="256 256 0 256 0 0 256 0 128 127.948759"
-          ></polygon>
+          />
         </g>
       </svg>
     </div>

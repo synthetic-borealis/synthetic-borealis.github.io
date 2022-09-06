@@ -1,9 +1,9 @@
-import { Component } from "solid-js";
-import { useSettings } from "../contexts/settings";
-import ThemeIcon from "./icons/ThemeIcon";
+import { Component } from 'solid-js';
+import { useSettings } from '../contexts/settings';
+import ThemeIcon from './icons/ThemeIcon';
 
-import "./ChangeThemeButton.scss";
-import Theme from "../enums/theme";
+import './ChangeThemeButton.scss';
+import Theme from '../enums/theme';
 
 const ChangeThemeButton: Component = () => {
   const [settings, { setDarkTheme, setLightTheme }] = useSettings();
@@ -20,7 +20,7 @@ const ChangeThemeButton: Component = () => {
 
   return (
     <button class="ChangeThemeButton" onClick={changeTheme}>
-      <ThemeIcon />
+      <ThemeIcon/>
     </button>
   );
 };

@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
-import "./SkillIcon.scss";
+import { Component } from 'solid-js';
+import './SkillIcon.scss';
 
 const CPPIcon: Component = () => {
   return (
@@ -9,8 +9,8 @@ const CPPIcon: Component = () => {
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
         {...{
-          "xmlns:xlink": "http://www.w3.org/1999/xlink",
-          "xml:space": "preserve",
+          'xmlns:xlink': 'http://www.w3.org/1999/xlink',
+          'xml:space': 'preserve',
         }}
         x="0px"
         y="0px"

@@ -1,14 +1,14 @@
-import { Component, createSignal, onCleanup, onMount, Show } from "solid-js";
+import { Component, createSignal, onCleanup, onMount, Show } from 'solid-js';
 
-import MobileMenu from "./MobileMenu";
-import SocialLinks from "./SocialLinks";
-import ISocialLinksData from "../interfaces/social-links-data";
+import MobileMenu from './MobileMenu';
+import SocialLinks from './SocialLinks';
+import ISocialLinksData from '../interfaces/social-links-data';
 
-import "./NavBar.scss";
+import './NavBar.scss';
 
-import OpenMenuIcon from "./icons/menu/OpenMenuIcon";
-import CloseMenuIcon from "./icons/menu/CloseMenuIcon";
-import ChangeThemeButton from "./ChangeThemeButton";
+import OpenMenuIcon from './icons/menu/OpenMenuIcon';
+import CloseMenuIcon from './icons/menu/CloseMenuIcon';
+import ChangeThemeButton from './ChangeThemeButton';
 
 interface INavBarProps {
   socialLinks: ISocialLinksData;
@@ -55,11 +55,11 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
   }
 
   onMount(() => {
-    window.addEventListener("resize", handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
   });
 
   onCleanup(() => {
-    window.removeEventListener("resize", handleWindowResize);
+    window.removeEventListener('resize', handleWindowResize);
   });
 
   return (
@@ -72,19 +72,19 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
                 <button
                   class="NavBar__menu-button"
                   onClick={handleMenuButtonClick}
-                  aria-label={isMenuOpen() ? "Menu button" : "Close menu button"}
+                  aria-label={isMenuOpen() ? 'Menu button' : 'Close menu button'}
                 >
-                  <Show when={isMenuOpen()} fallback={<OpenMenuIcon />}>
-                    <CloseMenuIcon />
+                  <Show when={isMenuOpen()} fallback={<OpenMenuIcon/>} keyed>
+                    <CloseMenuIcon/>
                   </Show>
                 </button>
               </div>
-              <ChangeThemeButton />
+              <ChangeThemeButton/>
             </>
           ) : (
             <>
               <div class="NavBar__left-container">
-                <ChangeThemeButton />
+                <ChangeThemeButton/>
                 <ul class="NavBar__link-container">
                   <li class="NavBar__link-wrapper">
                     <a href="#" class="NavBar__link">
@@ -141,7 +141,7 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
           </li>
         </MobileMenu>
       ) : (
-        ""
+        ''
       )}
     </>
   );

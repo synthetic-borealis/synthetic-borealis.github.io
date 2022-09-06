@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
-import "./SocialIcon.scss";
+import { Component } from 'solid-js';
+import './SocialIcon.scss';
 
 const LinkedinIcon: Component = () => {
   return (
@@ -9,8 +9,8 @@ const LinkedinIcon: Component = () => {
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
         {...{
-          "xmlns:xlink": "http://www.w3.org/1999/xlink",
-          "xml:space": "preserve",
+          'xmlns:xlink': 'http://www.w3.org/1999/xlink',
+          'xml:space': 'preserve',
         }}
         x="0px"
         y="0px"
@@ -20,15 +20,15 @@ const LinkedinIcon: Component = () => {
         <g>
           <path
             style={{
-              "fill-rule": "evenodd",
-              "clip-rule": "evenodd",
+              'fill-rule': 'evenodd',
+              'clip-rule': 'evenodd',
             }}
             d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
           />
           <path
             style={{
-              "fill-rule": "evenodd",
-              "clip-rule": "evenodd",
+              'fill-rule': 'evenodd',
+              'clip-rule': 'evenodd',
             }}
             d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
 		 M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
