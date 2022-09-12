@@ -74,17 +74,17 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
                   onClick={handleMenuButtonClick}
                   aria-label={isMenuOpen() ? 'Menu button' : 'Close menu button'}
                 >
-                  <Show when={isMenuOpen()} fallback={<OpenMenuIcon/>} keyed>
-                    <CloseMenuIcon/>
+                  <Show when={isMenuOpen()} fallback={<OpenMenuIcon />} keyed>
+                    <CloseMenuIcon />
                   </Show>
                 </button>
               </div>
-              <ChangeThemeButton/>
+              <ChangeThemeButton />
             </>
           ) : (
             <>
               <div class="NavBar__left-container">
-                <ChangeThemeButton/>
+                <ChangeThemeButton />
                 <ul class="NavBar__link-container">
                   <li class="NavBar__link-wrapper">
                     <a href="#" class="NavBar__link">

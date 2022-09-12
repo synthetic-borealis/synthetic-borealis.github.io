@@ -9,7 +9,7 @@ import { SettingsProvider } from './contexts/settings';
 render(
   () => (
     <SettingsProvider>
-      <App/>
+      <App />
     </SettingsProvider>
   ),
   document.getElementById('root') as HTMLElement,

@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 * {
   box-sizing: border-box;
@@ -10,8 +10,8 @@ html {
 
 body {
   margin: 0;
-  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-  "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background-colour;

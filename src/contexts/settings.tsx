@@ -7,13 +7,15 @@ interface ISettingsProviderProps {
   children?: JSXElement;
 }
 
-const SettingsContext = createContext<[
-  Accessor<ISettings>,
-  {
-    setDarkTheme(): void;
-    setLightTheme(): void;
-  },
-]>();
+const SettingsContext = createContext<
+  [
+    Accessor<ISettings>,
+    {
+      setDarkTheme(): void;
+      setLightTheme(): void;
+    },
+  ]
+>();
 
 export const SettingsProvider = (props: ISettingsProviderProps) => {
   const [state, setState] = createSignal<ISettings>({ theme: Theme.Dark }),
@@ -35,9 +37,7 @@ export const SettingsProvider = (props: ISettingsProviderProps) => {
       },
     ];
 
-  return (
-    <SettingsContext.Provider value={settings}>{props.children}</SettingsContext.Provider>
-  );
+  return <SettingsContext.Provider value={settings}>{props.children}</SettingsContext.Provider>;
 };
 
 export function useSettings() {

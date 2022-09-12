@@ -1,4 +1,4 @@
-@import "../variables";
+@import '../variables';
 
 .MobileMenu {
   position: fixed;
@@ -40,7 +40,7 @@
     bottom: 32px;
     left: calc(50% - 40px);
     padding: 0;
-    content: "";
+    content: '';
     background-color: transparent;
     width: 80px;
     height: 80px;

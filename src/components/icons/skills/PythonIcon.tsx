@@ -33,9 +33,8 @@ const PythonIcon: Component = () => {
           gradientTransform="matrix(1 0 0 -1 -53.2974 66.4321)"
         >
           {' '}
-          <stop offset="0" style={{ 'stop-color': '#387EB8' }}/>
-          {' '}
-          <stop offset="1" style={{ 'stop-color': '#366994' }}/>
+          <stop offset="0" style={{ 'stop-color': '#387EB8' }} />{' '}
+          <stop offset="1" style={{ 'stop-color': '#366994' }} />
         </linearGradient>
         <path
           fill="url(#SVGID_1_)"
@@ -51,9 +50,8 @@ const PythonIcon: Component = () => {
           gradientTransform="matrix(1 0 0 -1 -53.2974 66.4321)"
         >
           {' '}
-          <stop offset="0" style={{ 'stop-color': '#FFE052' }}/>
-          {' '}
-          <stop offset="1" style={{ 'stop-color': '#FFC331' }}/>
+          <stop offset="0" style={{ 'stop-color': '#FFE052' }} />{' '}
+          <stop offset="1" style={{ 'stop-color': '#FFC331' }} />
         </linearGradient>
         <path
           fill="url(#SVGID_2_)"
