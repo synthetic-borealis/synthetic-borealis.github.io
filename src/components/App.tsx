@@ -15,11 +15,7 @@ import { applyDarkTheme, applyLightTheme } from '../utils/themes';
 
 import socialLinksData from '../utils/social-links';
 import projectsList from '../utils/projects-list';
-import {
-  currentlyUsedSkills,
-  basicSkills,
-  currentlyLearningSkills,
-} from '../utils/skill-lists';
+import { currentlyUsedSkills, basicSkills, currentlyLearningSkills } from '../utils/skill-lists';
 import Theme from '../enums/theme';
 
 const App: Component = () => {
@@ -53,9 +49,9 @@ const App: Component = () => {
 
   return (
     <>
-      <NavBar socialLinks={socialLinksData}/>
-      <Intro/>
-      <AboutMe/>
+      <NavBar socialLinks={socialLinksData} />
+      <Intro />
+      <AboutMe />
       <Projects>
         <For each={projectsList}>{(project) => <li>{ProjectCard(project)}</li>}</For>
       </Projects>
@@ -70,7 +66,7 @@ const App: Component = () => {
           <For each={currentlyLearningSkills}>{(skill) => SkillCard(skill)}</For>
         </SkillsList>
       </Skills>
-      <Footer/>
+      <Footer />
     </>
   );
 };

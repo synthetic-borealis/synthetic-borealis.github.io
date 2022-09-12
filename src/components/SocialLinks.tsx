@@ -14,22 +14,22 @@ const SocialLinks: Component<ISocialLinksData> = (props: ISocialLinksData) => {
     <ul class="SocialLinks">
       <li class="SocialLinks__link">
         <a href={props.githubLink} target="_blank" rel="noreferrer">
-          <GithubIcon/>
+          <GithubIcon />
         </a>
       </li>
       <li class="SocialLinks__link">
         <a href={props.linkedinLink} target="_blank" rel="noreferrer">
-          <LinkedinIcon/>
+          <LinkedinIcon />
         </a>
       </li>
       <li class="SocialLinks__link">
         <a href={props.twitterLink} target="_blank" rel="noreferrer">
-          <TwitterIcon/>
+          <TwitterIcon />
         </a>
       </li>
       <li class="SocialLinks__link">
         <a href={props.resumeLink} target="_blank" rel="noreferrer">
-          <ResumeIcon/>
+          <ResumeIcon />
         </a>
       </li>
     </ul>

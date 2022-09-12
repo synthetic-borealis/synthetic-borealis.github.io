@@ -23,9 +23,9 @@ const KotlinIcon: Component = () => {
             y2="100.010253%"
             id="linearGradient-1"
           >
-            <stop stop-color="#E44857" offset="0.3435144%"/>
-            <stop stop-color="#C711E1" offset="46.89%"/>
-            <stop stop-color="#7F52FF" offset="100%"/>
+            <stop stop-color="#E44857" offset="0.3435144%" />
+            <stop stop-color="#C711E1" offset="46.89%" />
+            <stop stop-color="#7F52FF" offset="100%" />
           </linearGradient>
         </defs>
         <g>

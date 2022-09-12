@@ -20,7 +20,7 @@ const ChangeThemeButton: Component = () => {
 
   return (
     <button class="ChangeThemeButton" onClick={changeTheme}>
-      <ThemeIcon/>
+      <ThemeIcon />
     </button>
   );
 };
