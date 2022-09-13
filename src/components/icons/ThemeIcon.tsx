@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './ThemeIcon.scss';
 
-const ThemeIcon: Component = () => {
+export default function ThemeIcon() {
   return (
     <div role="img" aria-label="Change theme icon">
       <svg
@@ -21,6 +20,4 @@ const ThemeIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default ThemeIcon;
+}

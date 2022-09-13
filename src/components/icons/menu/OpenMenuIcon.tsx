@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './MenuIcon.scss';
 
-const OpenMenuIcon: Component = () => {
+export default function OpenMenuIcon() {
   return (
     <div role="img" aria-label="Menu icon">
       <svg
@@ -29,6 +28,4 @@ const OpenMenuIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default OpenMenuIcon;
+}
