@@ -1,4 +1,4 @@
-import { Component, JSXElement } from 'solid-js';
+import { JSXElement } from 'solid-js';
 
 import './Skills.scss';
 
@@ -6,7 +6,7 @@ interface ISkillsProps {
   children: JSXElement | JSXElement[];
 }
 
-const Skills: Component<ISkillsProps> = (props: ISkillsProps) => {
+export default function Skills(props: ISkillsProps) {
   return (
     <section class="Skills" id="skills">
       <div class="Skills__container">
@@ -15,6 +15,4 @@ const Skills: Component<ISkillsProps> = (props: ISkillsProps) => {
       </div>
     </section>
   );
-};
-
-export default Skills;
+}

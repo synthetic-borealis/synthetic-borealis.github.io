@@ -1,4 +1,4 @@
-import { Component, createSignal, onCleanup, onMount, Show } from 'solid-js';
+import { createSignal, onCleanup, onMount, Show } from 'solid-js';
 
 import MobileMenu from './MobileMenu';
 import SocialLinks from './SocialLinks';
@@ -14,7 +14,7 @@ interface INavBarProps {
   socialLinks: ISocialLinksData;
 }
 
-const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
+export default function NavBar(props: INavBarProps) {
   const mobileWidthThreshold = 1024;
   const [isMobileOrTablet, setIsMobileOrTablet] = createSignal<boolean>(
     window.innerWidth <= mobileWidthThreshold,
@@ -145,6 +145,4 @@ const NavBar: Component<INavBarProps> = (props: INavBarProps) => {
       )}
     </>
   );
-};
-
-export default NavBar;
+}

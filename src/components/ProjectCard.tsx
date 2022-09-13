@@ -1,9 +1,9 @@
-import { Component, Show } from 'solid-js';
+import { Show } from 'solid-js';
 import IProjectCardData from '../interfaces/project-card-data';
 
 import './ProjectCard.scss';
 
-const ProjectCard: Component<IProjectCardData> = (data: IProjectCardData) => {
+export default function ProjectCard(data: IProjectCardData) {
   return (
     <article class="ProjectCard">
       <img class="ProjectCard__thumbnail" src={data.thumbnail} alt={`${data.name} thumbnail`} />
@@ -27,6 +27,4 @@ const ProjectCard: Component<IProjectCardData> = (data: IProjectCardData) => {
       </ul>
     </article>
   );
-};
-
-export default ProjectCard;
+}

@@ -1,8 +1,6 @@
-import { Component } from 'solid-js';
-
 import './Footer.scss';
 
-const Footer: Component = () => {
+export default function Footer() {
   return (
     <footer class="Footer">
       <div class="Footer__container">
@@ -10,6 +8,4 @@ const Footer: Component = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
