@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SocialIcon.scss';
 
-const TwitterIcon: Component = () => {
+export default function TwitterIcon() {
   return (
     <div aria-label="Twitter icon" role="img">
       <svg
@@ -20,6 +19,4 @@ const TwitterIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default TwitterIcon;
+}

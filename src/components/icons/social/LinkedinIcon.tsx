@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SocialIcon.scss';
 
-const LinkedinIcon: Component = () => {
+export default function LinkedinIcon() {
   return (
     <div aria-label="LinkedIn icon" role="img">
       <svg
@@ -41,6 +40,4 @@ const LinkedinIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default LinkedinIcon;
+}

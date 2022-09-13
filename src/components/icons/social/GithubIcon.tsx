@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SocialIcon.scss';
 
-const GithubIcon: Component = () => {
+export default function GithubIcon() {
   return (
     <div aria-label="GitHub icon" role="img">
       <svg
@@ -20,6 +19,4 @@ const GithubIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default GithubIcon;
+}

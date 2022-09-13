@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SocialIcon.scss';
 
-const ResumeIcon: Component = () => {
+export default function ResumeIcon() {
   return (
     <div aria-label="Resume icon" role="img">
       <svg
@@ -33,6 +32,4 @@ const ResumeIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default ResumeIcon;
+}
