@@ -87,7 +87,7 @@ export default function NavBar(props: INavBarProps) {
                 <ChangeThemeButton />
                 <ul class="NavBar__link-container">
                   <li class="NavBar__link-wrapper">
-                    <a href="#" class="NavBar__link">
+                    <a href="#home" class="NavBar__link">
                       Home
                     </a>
                   </li>
@@ -120,7 +120,7 @@ export default function NavBar(props: INavBarProps) {
           socialLinks={props.socialLinks}
         >
           <li class="NavBar__link-wrapper">
-            <a href="#" class="NavBar__link" onClick={closeMenu}>
+            <a href="#home" class="NavBar__link" onClick={closeMenu}>
               Home
             </a>
           </li>

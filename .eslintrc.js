@@ -8,11 +8,12 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:solid/typescript',
+    'plugin:jsx-a11y/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  plugins: ['@typescript-eslint', 'solid'],
+  plugins: ['@typescript-eslint', 'solid', 'jsx-a11y'],
   rules: {},
 };
