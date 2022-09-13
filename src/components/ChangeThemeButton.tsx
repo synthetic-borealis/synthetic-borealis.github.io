@@ -1,11 +1,10 @@
-import { Component } from 'solid-js';
 import { useSettings } from '../contexts/settings';
 import ThemeIcon from './icons/ThemeIcon';
 
 import './ChangeThemeButton.scss';
 import Theme from '../enums/theme';
 
-const ChangeThemeButton: Component = () => {
+export default function ChangeThemeButton() {
   const [settings, { setDarkTheme, setLightTheme }] = useSettings();
 
   function changeTheme() {
@@ -23,6 +22,4 @@ const ChangeThemeButton: Component = () => {
       <ThemeIcon />
     </button>
   );
-};
-
-export default ChangeThemeButton;
+}

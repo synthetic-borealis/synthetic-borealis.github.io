@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const NodeJsIcon: Component = () => {
+export default function NodeJsIcon() {
   return (
     <div role="img" aria-label="Node.js logo">
       <svg
@@ -22,6 +21,4 @@ const NodeJsIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default NodeJsIcon;
+}

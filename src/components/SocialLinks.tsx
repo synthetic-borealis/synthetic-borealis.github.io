@@ -1,4 +1,4 @@
-import { Component } from 'solid-js';
+import SocialLink from './SocialLink';
 
 import ISocialLinksData from '../interfaces/social-links-data';
 
@@ -9,31 +9,21 @@ import LinkedinIcon from './icons/social/LinkedinIcon';
 import TwitterIcon from './icons/social/TwitterIcon';
 import ResumeIcon from './icons/social/ResumeIcon';
 
-const SocialLinks: Component<ISocialLinksData> = (props: ISocialLinksData) => {
+export default function SocialLinks(props: ISocialLinksData) {
   return (
     <ul class="SocialLinks">
       <li class="SocialLinks__link">
-        <a href={props.githubLink} target="_blank" rel="noreferrer">
-          <GithubIcon />
-        </a>
+        <SocialLink url={props.githubLink} icon={<GithubIcon />} openInNewTab noReferer />
       </li>
       <li class="SocialLinks__link">
-        <a href={props.linkedinLink} target="_blank" rel="noreferrer">
-          <LinkedinIcon />
-        </a>
+        <SocialLink url={props.linkedinLink} icon={<LinkedinIcon />} openInNewTab noReferer />
       </li>
       <li class="SocialLinks__link">
-        <a href={props.twitterLink} target="_blank" rel="noreferrer">
-          <TwitterIcon />
-        </a>
+        <SocialLink url={props.twitterLink} icon={<TwitterIcon />} openInNewTab noReferer />
       </li>
       <li class="SocialLinks__link">
-        <a href={props.resumeLink} target="_blank" rel="noreferrer">
-          <ResumeIcon />
-        </a>
+        <SocialLink url={props.resumeLink} icon={<ResumeIcon />} openInNewTab noReferer />
       </li>
     </ul>
   );
-};
-
-export default SocialLinks;
+}

@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './AboutMe.scss';
 
-const AboutMe: Component = () => {
+export default function AboutMe() {
   return (
     <>
       <section class="AboutMe" id="about-me">
@@ -25,5 +24,4 @@ const AboutMe: Component = () => {
       </section>
     </>
   );
-};
-export default AboutMe;
+}

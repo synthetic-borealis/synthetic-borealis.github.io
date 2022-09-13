@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const MongoDBIcon: Component = () => {
+export default function MongoDBIcon() {
   return (
     <div role="img" aria-label="MongoDB logo">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="SkillIcon">
@@ -9,6 +8,4 @@ const MongoDBIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default MongoDBIcon;
+}

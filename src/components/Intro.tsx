@@ -1,4 +1,3 @@
-import { Component } from 'solid-js';
 import { Portal } from 'solid-js/web';
 
 import './Intro.scss';
@@ -6,7 +5,7 @@ import './Intro.scss';
 import ArrowDownIcon from './icons/ArrowDownIcon';
 import avatarImg from '../images/avatar.webp';
 
-const Intro: Component = () => {
+export default function Intro() {
   return (
     <>
       <Portal mount={document.head}>
@@ -24,6 +23,4 @@ const Intro: Component = () => {
       </header>
     </>
   );
-};
-
-export default Intro;
+}

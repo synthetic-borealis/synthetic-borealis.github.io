@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const KotlinIcon: Component = () => {
+export default function KotlinIcon() {
   return (
     <div role="img" aria-label="Kotlin logo">
       <svg
@@ -38,6 +37,4 @@ const KotlinIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default KotlinIcon;
+}

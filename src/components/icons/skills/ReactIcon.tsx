@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const ReactIcon: Component = () => {
+export default function ReactIcon() {
   return (
     <div role="img" aria-label="React.js logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="SkillIcon">
@@ -9,6 +8,4 @@ const ReactIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default ReactIcon;
+}

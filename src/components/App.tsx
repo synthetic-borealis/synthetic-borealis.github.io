@@ -1,4 +1,4 @@
-import { Component, createEffect, createSignal, For, onMount } from 'solid-js';
+import { createEffect, createSignal, For, onMount } from 'solid-js';
 
 import NavBar from './NavBar';
 import Intro from './Intro';
@@ -18,7 +18,7 @@ import projectsList from '../utils/projects-list';
 import { currentlyUsedSkills, basicSkills, currentlyLearningSkills } from '../utils/skill-lists';
 import Theme from '../enums/theme';
 
-const App: Component = () => {
+export default function App() {
   const [settings, { setDarkTheme, setLightTheme }] = useSettings();
   const [isMounted, setIsMounted] = createSignal<boolean>(false);
 
@@ -69,6 +69,4 @@ const App: Component = () => {
       <Footer />
     </>
   );
-};
-
-export default App;
+}

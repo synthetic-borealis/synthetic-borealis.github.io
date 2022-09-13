@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const ExpressJsIcon: Component = () => {
+export default function ExpressJsIcon() {
   return (
     <div role="img" aria-label="Express.js logo">
       <svg
@@ -23,6 +22,4 @@ const ExpressJsIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default ExpressJsIcon;
+}

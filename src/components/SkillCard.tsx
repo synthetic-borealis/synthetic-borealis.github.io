@@ -1,15 +1,16 @@
-import { Component } from 'solid-js';
-import ISkillData from '../interfaces/skill-data';
-
 import './SkillCard.scss';
+import { JSXElement } from 'solid-js';
 
-const SkillCard: Component<ISkillData> = (props: ISkillData) => {
+interface ISkillCardProps {
+  name: string;
+  icon: JSXElement;
+}
+
+export default function SkillCard(props: ISkillCardProps) {
   return (
     <li class="SkillCard">
-      <props.icon />
+      {props.icon}
       <p class="SkillCard__caption">{props.name}</p>
     </li>
   );
-};
-
-export default SkillCard;
+}

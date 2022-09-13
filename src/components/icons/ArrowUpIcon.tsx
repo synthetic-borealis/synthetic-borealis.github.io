@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './ArrowUpIcon.scss';
 
-const ArrowUpIcon: Component = () => {
+export default function ArrowUpIcon() {
   return (
     <div aria-label="Arrows pointing up" role="img">
       <svg
@@ -34,6 +33,4 @@ const ArrowUpIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default ArrowUpIcon;
+}

@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const SassIcon: Component = () => {
+export default function SassIcon() {
   return (
     <div role="img" aria-label="Sass logo">
       <svg
@@ -51,6 +50,4 @@ const SassIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default SassIcon;
+}
