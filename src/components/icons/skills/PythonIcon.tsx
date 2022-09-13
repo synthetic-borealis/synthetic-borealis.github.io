@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const PythonIcon: Component = () => {
+export default function PythonIcon() {
   return (
     <div role="img" aria-label="Python logo">
       <svg
@@ -60,6 +59,4 @@ const PythonIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default PythonIcon;
+}

@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const TypeScriptIcon: Component = () => {
+export default function TypeScriptIcon() {
   return (
     <div role="img" aria-label="TypeScript logo">
       <svg
@@ -30,6 +29,4 @@ const TypeScriptIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default TypeScriptIcon;
+}

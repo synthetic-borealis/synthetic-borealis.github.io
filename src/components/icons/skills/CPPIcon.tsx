@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const CPPIcon: Component = () => {
+export default function CPPIcon() {
   return (
     <div role="img" aria-label="C++ logo">
       <svg
@@ -60,6 +59,4 @@ const CPPIcon: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default CPPIcon;
+}

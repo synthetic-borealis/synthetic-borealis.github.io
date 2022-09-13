@@ -1,7 +1,6 @@
-import { Component } from 'solid-js';
 import './SkillIcon.scss';
 
-const CSharpLogo: Component = () => {
+export default function CSharpLogo() {
   return (
     <div role="img" aria-label="C# logo">
       <svg
@@ -25,6 +24,4 @@ const CSharpLogo: Component = () => {
       </svg>
     </div>
   );
-};
-
-export default CSharpLogo;
+}
