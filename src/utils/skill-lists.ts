@@ -19,6 +19,8 @@ import SassIcon from '../components/icons/skills/SassIcon';
 // Learning Skills
 import KotlinIcon from '../components/icons/skills/KotlinIcon';
 import RustIcon from '../components/icons/skills/RustIcon';
+import JavaIcon from '../components/icons/skills/JavaIcon';
+import SpringIcon from '../components/icons/skills/SpringIcon';
 
 export const currentlyUsedSkills: Array<ISkillData> = [
   {
@@ -83,4 +85,12 @@ export const currentlyLearningSkills: Array<ISkillData> = [
     name: 'Kotlin',
     icon: KotlinIcon,
   },
+  {
+    name: 'Java',
+    icon: JavaIcon,
+  },
+  {
+    name: 'Spring',
+    icon: SpringIcon,
+  }
 ];
