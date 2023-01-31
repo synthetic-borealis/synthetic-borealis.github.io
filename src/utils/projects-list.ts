@@ -6,6 +6,12 @@ import npmLogo from '../images/project-tumbnails/npm-logo.webp';
 import reactiveWebcrawlerThumbnail from '../images/project-tumbnails/reactive-webcrawler.webp';
 
 const projectsList: Array<IProjectCardData> = [
+  // {
+  //   name: 'Reactive Web Crawler',
+  //   thumbnail: reactiveWebcrawlerThumbnail,
+  //   description: 'A Spring-based reactive web-crawler.',
+  //   repoUrl: 'https://github.com/synthetic-borealis/spring-reactiveSearch',
+  // },
   {
     name: 'News Explorer',
     thumbnail: newsExplorerThumbnail,
@@ -16,14 +22,8 @@ const projectsList: Array<IProjectCardData> = [
     name: 'Around the U.S.',
     thumbnail: aroundTheUsThumbnail,
     description: 'An image sharing app for travel lovers.',
-    liveUrl: 'https://synthetic-borealis.github.io/react-around-api-full',
+    // liveUrl: 'https://synthetic-borealis.github.io/react-around-api-full',
     repoUrl: 'https://github.com/synthetic-borealis/react-around-api-full',
-  },
-  {
-    name: 'Reactive Web Crawler',
-    thumbnail: reactiveWebcrawlerThumbnail,
-    description: 'A Spring-based reactive web-crawler.',
-    repoUrl: 'https://github.com/synthetic-borealis/spring-reactiveSearch',
   },
   {
     name: 'Hirnfick',
