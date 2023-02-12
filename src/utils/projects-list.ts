@@ -6,12 +6,13 @@ import npmLogo from '../images/project-tumbnails/npm-logo.webp';
 import reactiveWebcrawlerThumbnail from '../images/project-tumbnails/reactive-webcrawler.webp';
 
 const projectsList: Array<IProjectCardData> = [
-  // {
-  //   name: 'Reactive Web Crawler',
-  //   thumbnail: reactiveWebcrawlerThumbnail,
-  //   description: 'A Spring-based reactive web-crawler.',
-  //   repoUrl: 'https://github.com/synthetic-borealis/spring-reactiveSearch',
-  // },
+  {
+    name: 'Reactive Web Crawler',
+    thumbnail: reactiveWebcrawlerThumbnail,
+    description: 'A Spring-based reactive web-crawler.',
+    // repoUrl: 'https://github.com/synthetic-borealis/spring-reactiveSearch',
+    swaggerUrl: 'http://34.125.52.101:8080/swagger-ui/',
+  },
   {
     name: 'News Explorer',
     thumbnail: newsExplorerThumbnail,
