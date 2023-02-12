@@ -3,5 +3,6 @@ export default interface IProjectCardData {
   thumbnail: string;
   description: string;
   liveUrl?: string;
+  swaggerUrl?: string;
   repoUrl?: string;
 }

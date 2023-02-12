@@ -17,6 +17,13 @@ export default function ProjectCard(data: IProjectCardData) {
             </a>
           </li>
         </Show>
+        <Show when={data.swaggerUrl} keyed>
+          <li class="ProjectCard__link-wrapper">
+            <a class="ProjectCard__link" href={data.swaggerUrl} target="_blank" rel="noreferrer">
+              Swagger
+            </a>
+          </li>
+        </Show>
         <Show when={data.repoUrl} keyed>
           <li class="ProjectCard__link-wrapper">
             <a class="ProjectCard__link" href={data.repoUrl} target="_blank" rel="noreferrer">
