@@ -10,7 +10,7 @@ const projectsList: Array<IProjectCardData> = [
     name: 'Reactive Web Crawler',
     thumbnail: reactiveWebcrawlerThumbnail,
     description: 'A Spring-based reactive web-crawler.',
-    // repoUrl: 'https://github.com/synthetic-borealis/spring-reactiveSearch',
+    repoUrl: 'https://github.com/synthetic-borealis/spring-reactiveSearch-pub',
     swaggerUrl: 'http://34.125.52.101:8080/swagger-ui/',
   },
   {
