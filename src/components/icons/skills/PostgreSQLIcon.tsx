@@ -2,7 +2,7 @@ import './SkillIcon.scss';
 
 export default function PostgreSQLIcon() {
   return (
-    <div role="img" aria-label="VUE Icon">
+    <div role="img" aria-label="PostgreSQL icon">
       <svg
         width="800px"
         height="800px"
