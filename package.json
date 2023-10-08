@@ -9,7 +9,7 @@
     "serve": "vite preview",
     "lint": "eslint src",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,scss,sass,md,json,html}",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
@@ -29,6 +29,5 @@
   },
   "dependencies": {
     "solid-js": "^1.7.12"
-  },
-  "packageManager": "yarn@3.2.4"
+  }
 }
