@@ -5,8 +5,9 @@ import HTMLIcon from '../components/icons/skills/HTMLIcon';
 import CSSIcon from '../components/icons/skills/CSSIcon';
 import ReactIcon from '../components/icons/skills/ReactIcon';
 import NodeJsIcon from '../components/icons/skills/NodeJsIcon';
-import MongoDBIcon from '../components/icons/skills/MongoDBIcon';
 import ExpressJsIcon from '../components/icons/skills/ExpressJsIcon';
+import VUEIcon from '../components/icons/skills/VUEIcon';
+import PostgreSQLIcon from '../components/icons/skills/PostgreSQLIcon';
 
 // Basic Skills
 import PythonIcon from '../components/icons/skills/PythonIcon';
@@ -32,21 +33,21 @@ export const currentlyUsedSkills: Array<ISkillData> = [
     icon: CSSIcon,
   },
   {
-    name: 'React.js',
-    icon: ReactIcon,
-  },
-  {
     name: 'Node.js',
     icon: NodeJsIcon,
-  },
-  {
-    name: 'MongoDB',
-    icon: MongoDBIcon,
   },
   {
     name: 'Express.js',
     icon: ExpressJsIcon,
   },
+  {
+    name: 'Vue.js',
+    icon: VUEIcon
+  },
+  {
+    name: 'PostgreSQL',
+    icon: PostgreSQLIcon
+  }
 ];
 
 export const basicSkills: Array<ISkillData> = [
@@ -73,6 +74,10 @@ export const basicSkills: Array<ISkillData> = [
   {
     name: 'Sass',
     icon: SassIcon,
+  },
+  {
+    name: 'React.js',
+    icon: ReactIcon,
   },
 ];
 
