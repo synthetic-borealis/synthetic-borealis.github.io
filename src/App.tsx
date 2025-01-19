@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <h1>{t('app.placeholderWelcome')}</h1>
+      <p>בדיקה</p>
     </>
   );
 }
