@@ -1,9 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import './App.scss';
 
 function App() {
+  const { t } = useTranslation();
   return (
     <>
-      <h1>React Template</h1>
+      <h1>{t('app.placeholderWelcome')}</h1>
     </>
   );
 }
