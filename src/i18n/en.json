@@ -1,6 +1,7 @@
 {
   "app": {
-    "placeholderWelcome": "Hello, Mars!"
+    "placeholderWelcome": "Hello, Mars!",
+    "changeLanguage": "Change Language"
   },
   "pages": {},
   "components": {}
