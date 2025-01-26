@@ -2,6 +2,19 @@
   "app": {
     "placeholderWelcome": "Hello, Mars!"
   },
-  "pages": {},
+  "pages": {
+    "home": {
+      "title": "Home"
+    },
+    "about": {
+      "title": "About Me"
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "skills": {
+      "title": "Skills"
+    }
+  },
   "components": {}
 }
